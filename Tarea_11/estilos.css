@@ -7,14 +7,14 @@ h2 {
 }
 
 body {
-    background-color: #43FC91;
+    background-color: rgb(186, 66, 255);
     margin: 20px; 
     padding-bottom: 10px;
 }
 
 nav {
     float: left;
-    background-color: #4CFCDC;
+    background-color: #c473d8;
     width: 260px;
     height: 200px;
 }
@@ -25,15 +25,16 @@ nav {
     
 }
 main{
-    background-color: #57D5CB;
+    background-color: #9965bb;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     float: left;
 }
 footer{
-    background-color: #34C3C5;
+    background-color: #4e4579;
     clear: both;
     text-align: center;
     padding: 30px;
+    color: rgb(149, 190, 228);
 }

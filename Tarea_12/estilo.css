@@ -1,5 +1,5 @@
 h2 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: Verdana;
     color: rgb(0, 0, 0);
     margin-left: 5px;
@@ -8,7 +8,7 @@ h2 {
 
 body {
     background-color: rgb(186, 66, 255);
-    margin: 20px; 
+    margin: 20px;
     padding-bottom: 10px;
 }
 
@@ -18,13 +18,15 @@ nav {
     width: 260px;
     height: 200px;
 }
-.enlaces{
-   margin-left: 5px;
-   padding-left: 5px;
-   list-style: none;
-    
+
+.enlaces {
+    margin-left: 5px;
+    padding-left: 5px;
+    list-style: none;
+
 }
-main{
+
+main {
     background-color: #9965bb;
     padding-left: 20px;
     padding-top: 10px;
@@ -32,29 +34,34 @@ main{
     margin-left: 260px;
     overflow: auto;
 }
-footer{
+
+footer {
     background-color: #4e4579;
     clear: both;
     text-align: center;
     padding: 30px;
     color: rgb(149, 190, 228);
 }
-h1{
+
+h1 {
     text-align: center;
 }
-img{
+
+img {
     max-width: 90%;
     max-height: 50%;
 }
+
 a {
     position: relative;
     overflow: hidden;
     display: inline-block;
     text-decoration: none;
     color: #dfc118;
-    }
-    a:before,
-    a:after {
+}
+
+a:before,
+a:after {
     content: "";
     position: absolute;
     top: 0;
@@ -63,25 +70,30 @@ a {
     height: 2px;
     background: #ff0000;
     transition: left .8s;
-    }
-    a:hover:before {
+}
+
+a:hover:before {
     left: 0;
-    }
-    a:after {
+}
+
+a:after {
     top: auto;
     bottom: 0;
     left: auto;
     right: -100%;
     background: #ff0000;
     transition: right .8s;
-    }
-    a:hover:after {
+}
+
+a:hover:after {
     right: 0;
-    }
-.negrita{
+}
+
+.negrita {
     font-weight: bold;
 }
-.ficha{
+
+.ficha {
     float: left;
     width: 300px;
     height: 350px;

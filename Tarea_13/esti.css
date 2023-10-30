@@ -51,11 +51,16 @@ a {
     a:hover:after {
     right: 0;
     }
-ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    li{
+        align-items: center;
+        margin: 10px;
+    }
+
 input{
     border-radius: 20px;
 

@@ -50,12 +50,3 @@ a:after {
 a:hover:after {
     right: 0;
 }
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-li{
-    align-items: center;
-    margin: 10px;
-}

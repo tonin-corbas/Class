@@ -6,6 +6,8 @@ nav{
     background-color: #c473d8;
     justify-content: space-between;
     padding-left: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
 }
 .buscador{
     align-self: center;
@@ -53,4 +55,8 @@ ul{
     display: flex;
     flex-direction: row;
     list-style: none;
+}
+input{
+    border-radius: 20px;
+
 }

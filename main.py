@@ -1,11 +1,11 @@
 print("Escribe la contraseña")
 pwd= input()
-print ("has escrito " + pwd)
+print ("has escrito ",pwd)
 
 contador = 3
 
 while contador > 0:
-    print("Te quedan " + contador + " intentos")
+    print("Te quedan ",contador, " intentos")
     if contador ==1:
         print("Te queda un intento")
     else:

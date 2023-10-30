@@ -1,0 +1,9 @@
+nav{
+    display: flex;
+    background-color: aqua;
+}
+h2{
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-style: Verdana;
+}

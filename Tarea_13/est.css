@@ -5,9 +5,11 @@ nav{
     display: flex;
     background-color: #c473d8;
     justify-content: space-between;
+    padding-left: 10px;
 }
-div{
+.buscador{
     align-self: center;
+    padding-right: 10px;
 }
 h2{
     color: antiquewhite;
@@ -47,3 +49,8 @@ a {
     a:hover:after {
     right: 0;
     }
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}

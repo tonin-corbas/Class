@@ -1,0 +1,20 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: Times New Roman;
+}
+.negrita{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: Verdana;
+    font-weight: bold;
+}
+img{
+    max-height: 70%;
+}
+div{
+    box-shadow: 0px 0px 5px black;
+}

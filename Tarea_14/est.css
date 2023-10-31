@@ -6,12 +6,29 @@ nav {
     display: flex;
     background-color: #c473d8;
     justify-content: space-between;
+    padding-left: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+
+main{
+    overflow: auto;
+}
+
+.buscador {
+    align-self: center;
+    padding-right: 10px;
 }
 
 h2 {
     color: antiquewhite;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: Verdana;
+    align-self: center;
+}
+
+h1{
+    text-align: center;
 }
 
 a {
@@ -20,6 +37,7 @@ a {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
+    margin: 10px;
 }
 
 a:before,
@@ -49,4 +67,50 @@ a:after {
 
 a:hover:after {
     right: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    align-items: center;
+    margin: 10px;
+}
+
+input {
+    border-radius: 20px;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 70%;
+    max-height: 30%;
+}
+
+.color {
+    color: yellow;
+}
+
+.ficha {
+    align-content: center;
+    width: 250px;
+    height: 350px;
+    box-shadow: 0px 0px 5px black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center; 
+    transition: transform 0.3s ease-in-out;
+}
+.ficha:hover{
+    transform: scale(1.05);
+}
+    
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }

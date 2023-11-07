@@ -5,6 +5,9 @@ body{
 .cambio::after{
     content: '∞';
 }
+ul{
+    list-style: none;
+}
 
 @media screen  and (max-width: 1024px) {
     .cambio::after{
@@ -15,7 +18,7 @@ body{
         
         background-color:aquamarine;
         font-size: 16px;
-    }
+    }   
 }
 @media screen and (max-width: 480px) {
     .cambio::after{
@@ -27,5 +30,4 @@ body{
         color: aliceblue;
         font-size: 12px;
     }
-    
 }

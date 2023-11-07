@@ -1,0 +1,31 @@
+body{
+    background-color: antiquewhite;
+    font-size: 18px;
+}
+.cambio::after{
+    content: '∞';
+}
+
+@media screen  and (max-width: 1024px) {
+    .cambio::after{
+        content: '1024px';
+        color:black;
+    }
+    body{
+        
+        background-color:aquamarine;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .cambio::after{
+        content: '480px';
+        color: aliceblue;
+    }
+    body{
+        background-color: black;
+        color: aliceblue;
+        font-size: 12px;
+    }
+    
+}

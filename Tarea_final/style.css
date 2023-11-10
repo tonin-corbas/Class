@@ -1,0 +1,103 @@
+
+nav {
+    display: flex;
+    background-color: #c473d8;
+    justify-content: space-between;
+    padding-left: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: [prim] ;
+}
+
+.buscador {
+    align-self: center;
+    padding-right: 10px;
+}
+
+h2 {
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: Verdana;
+    align-self: center;
+}
+
+a {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px;
+}
+
+a:before,
+a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #ff0000;
+    transition: left .8s;
+}
+
+a:hover:before {
+    left: 0;
+}
+
+a:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: -100%;
+    background: #ff0000;
+    transition: right .8s;
+}
+
+a:hover:after {
+    right: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    align-items: center;
+    margin: 10px;
+}
+
+input {
+    border-radius: 20px;
+}
+
+.contenedor{
+    background-color: azure;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 5px black;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.textonor{
+    width: 50%;
+    text-align: left;
+}
+@import 

@@ -6,34 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea final</title>
     <link rel="stylesheet" href="style.css" />
-    
+
 </head>
 
 <body>
     <nav>
         <h2>TECHGENE</h2>
         <ul>
-            <li><a href="https://tonin-corbas.github.io/Class/Tarea_13/">Inicio</a></li>
-            <li><a href="https://tonin-corbas.github.io/Class/Tarea_11/">Introducción</a></li>
-            <li><a href="https://tonin-corbas.github.io/Class/Tarea_12/">Catálogo</a></li>
-            <li><a href="https://tonin-corbas.github.io/Class/Tarea_14/">Contacto</a></li>
-            <li><a href="https://tonin-corbas.github.io/Class/">Índice de tareas</a></li>
+            <li><a href="https://tonin-corbas.github.io/Class/Tarea_final/" class="color">Inicio</a></li>
+            <li><a href="#nosotros" class="color">Sobre nosotros</a></li>
+            <li><a href="#NS" class="color">Nuestros servicios</a></li>
+            <li><a href="#" class="color">Portfolio</a></li>
+            <li><a href="#" class="color">Contacto</a></li>
+            <li><a href="https://tonin-corbas.github.io/Class/" class="color">Índice de tareas</a></li>
         </ul>
         <form class="buscador">
             <input type="search" id="site-search" name="q" placeholder="Buscar..." />
         </form>
     </nav>
-    <main>
-        <div class="contenedor flex">
-            <div class="textonor">
+    <main class="fondo-oscuro" id="nosotros">
+        <div class="contenedor flex p20 fondo-oscuro">
+            <div class="textonor medio flex-item-central-vertical ">
                 <h3>Sobre nosotros</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa animi eum aliquid voluptates laborum suscipit enim voluptate accusamus est quod assumenda, sint debitis tenetur qui rem neque placeat, voluptatem illum doloremque molestias molestiae cumque maiores? Vel modi quisquam dicta illum reiciendis? Repudiandae earum ducimus quis iure neque labore dolore suscipit, laboriosam aliquid unde magnam eum adipisci illum cumque nobis reiciendis vero accusamus maxime eaque nam incidunt! Cupiditate dignissimos dolorem accusantium. Suscipit mollitia et sunt quos ratione omnis modi nam, ut consequatur. Beatae cumque sit quia harum in aspernatur tempore, tempora earum, dolorum ratione saepe nostrum. Quae exercitationem iste voluptatum. <b>Fuente Playfair Display y Jungle
-                </b></p>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa animi eum
+                    aliquid voluptates laborum suscipit enim voluptate accusamus est quod assumenda, sint debitis
+                    tenetur qui rem neque placeat, voluptatem illum doloremque molestias molestiae cumque maiores? Vel
+                    modi quisquam dicta illum reiciendis? Repudiandae earum ducimus quis iure neque labore dolore
+                    suscipit, laboriosam aliquid unde magnam eum adipisci illum cumque nobis reiciendis vero accusamus
+                    maxime eaque nam incidunt! Cupiditate dignissimos dolorem accusantium. Suscipit mollitia et sunt
+                    quos ratione omnis modi nam, ut consequatur. Beatae cumque sit quia harum in aspernatur tempore,
+                    tempora earum, dolorum ratione saepe nostrum. Quae exercitationem iste voluptatum.
+                </p>
             </div>
-            <div class="centrado">
-                <img src="https://idhbc.es/wp-content/uploads/2022/05/funiber-tecnologia-empresas.jpg">
+            <div class="flex-item-central-vertical bordeado-suave sombreado-suave"></div>
+            <img src="https://idhbc.es/wp-content/uploads/2022/05/funiber-tecnologia-empresas.jpg"
+                class="bordeado-suave medio">
+        </div>
+        </div>
+    </main>
+    <main class="contenedor" id="NS">
+        <h3>Nuestros servicios</h3>
+        <div class="flex  justificar">
+            <div class="ficha tamaño margenes sombreado">
+                <img src="https://cdn-icons-png.flaticon.com/512/1766/1766698.png" class="tamanio2">
+                <p id="I+D" class="negrita"><a>I+D</a href="#I+D"></p>
+                <p>centrado en actividades de investigación. Encargados de llevar a cabo mejoras de los productos y
+                    procedimientos existentes o para conducir al desarrollo de nuevos productos y procedimientos.</p>
+            </div>
+            <div class="ficha tamaño margenes sombreado">
+                <img src="data:image/png;base64,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"
+                    class="tamanio2">
+                <p class="negrita"><a>Diseño de productos</a href="#"></p>
+                <p>Encargados de Diseñar y pensar el apartado gráfico de nuestros productos.</p>
+            </div>
+            <div class="ficha tamaño margenes sombreado">
+                <img src="https://cdn-icons-png.flaticon.com/512/4693/4693059.png" class="tamanio2">
+                <p class="negrita"><a>SEO y dirección de marketing</a href="#"></p>
+                <p>Encargados de la optimización del motor y de estrategias centradas al marketing</p>
+            </div>
+            <div class="ficha tamaño margenes sombreado">
+                <img src="https://cdn-icons-png.flaticon.com/512/675/675523.png" class="tamanio2">
+                <p class="negrita"><a>Soporte técnico</a href="#"></p>
+                <p>Encargados de la ayuda a los usuarios y de arreglar sus problemas</p>
             </div>
         </div>
+    </main>
+    <main class="fondo-oscuro p20">
+        <div class="grid">
+            <div>
+                <h3>Nuestro Portfolio</h3>
+                <div class="celdas">
+                    <img src="">
+                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
+                    <p></p>
+                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
+                </div>
+                <div class="celdas">
+                    <img src="">
+                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
+                    <p></p>
+                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
+                </div>
+                <div class="celdas">
+                    <img src="">
+                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
+                    <p></p>
+                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
+                </div>
+            </div>
     </main>
 </body>
 

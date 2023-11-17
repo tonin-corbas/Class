@@ -10,24 +10,23 @@
 </head>
 
 <body>
-    <nav>
-        <h2>TECHGENE</h2>
-        <ul>
-            <li><a href="https://tonin-corbas.github.io/Class/Tarea_final/" class="color">Inicio</a></li>
-            <li><a href="#nosotros" class="color">Sobre nosotros</a></li>
-            <li><a href="#NS" class="color">Nuestros servicios</a></li>
-            <li><a href="#" class="color">Portfolio</a></li>
-            <li><a href="#" class="color">Contacto</a></li>
-            <li><a href="https://tonin-corbas.github.io/Class/" class="color">Índice de tareas</a></li>
+    <nav class="nav-esp nav-sombra">
+        <h2 class="h2">TECHGENE</h2>
+        <ul class="ul">
+            <li class="li"><a href="#nosotros" class="color">Sobre nosotros</a></li>
+            <li class="li"><a href="#NS" class="color">Nuestros servicios</a></li>
+            <li class="li"><a href="#PT" class="color">Portfolio</a></li>
+            <li class="li"><a href="#Cont" class="color">Contacto</a></li>
+            <li class="li"><a href="https://tonin-corbas.github.io/Class/" class="color">Índice de tareas</a></li>
         </ul>
         <form class="buscador">
-            <input type="search" id="site-search" name="q" placeholder="Buscar..." />
+            <input type="search" name="q" placeholder="Buscar..." class="click" />
         </form>
     </nav>
-    <main class="fondo-oscuro" id="nosotros">
+    <div class="fondo-oscuro" id="nosotros">
         <div class="contenedor flex p20 fondo-oscuro">
             <div class="textonor medio flex-item-central-vertical ">
-                <h3>Sobre nosotros</h3>
+                <h3 class="h3">Sobre nosotros</h3>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa animi eum
                     aliquid voluptates laborum suscipit enim voluptate accusamus est quod assumenda, sint debitis
                     tenetur qui rem neque placeat, voluptatem illum doloremque molestias molestiae cumque maiores? Vel
@@ -42,10 +41,10 @@
             <img src="https://idhbc.es/wp-content/uploads/2022/05/funiber-tecnologia-empresas.jpg"
                 class="bordeado-suave medio">
         </div>
-        </div>
-    </main>
-    <main class="contenedor" id="NS">
-        <h3>Nuestros servicios</h3>
+    </div>
+    </div>
+    <div class="contenedor" id="NS">
+        <h3 class="h3">Nuestros servicios</h3>
         <div class="flex  justificar">
             <div class="ficha tamaño margenes sombreado">
                 <img src="https://cdn-icons-png.flaticon.com/512/1766/1766698.png" class="tamanio2">
@@ -70,31 +69,79 @@
                 <p>Encargados de la ayuda a los usuarios y de arreglar sus problemas</p>
             </div>
         </div>
-    </main>
-    <main class="fondo-oscuro p20">
-        <div class="grid">
-            <div>
-                <h3>Nuestro Portfolio</h3>
-                <div class="celdas">
-                    <img src="https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/computer-network-t.jpg" class="tamanio lugar bordeado-suave">
-                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
-                    <p></p>
-                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
-                </div>
-                <div class="celdas">
-                    <img src="">
-                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
-                    <p></p>
-                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
-                </div>
-                <div class="celdas">
-                    <img src="">
-                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
-                    <p></p>
-                    <p class="negrita"><a>Diseño de productos</a href="#"></p>
-                </div>
+    </div>
+    <div class="fondo-oscuro p20" id="PT">
+        <h3 class="contenedor p20 h3">Nuestro Portfolio</h3>
+        <div class="grid ajuste espacio">
+            <div class="celdas ficha">
+                <img src="https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/computer-network-t.jpg"
+                    class="tamanio3 lugar bordeado-suave">
+                <p class="negrita centrado"><a class="port">P.W.D (Personal Wb Designer)</a href="#"></p>
+                <p class="centrado">Utensilio usado para crear páginas web a gusto de cada persona</p>
+                <p class="negrita centrado"><a class="port">Leer más</a href="#"></p>
             </div>
-    </main>
+            <div class="celdas ficha">
+                <img src="https://www.inesdi.com/sites/default/files/2022-05/tipos%20de%20software.jpg"
+                    class="tamanio3 lugar bordeado-suave">
+                <p class="negrita centrado"><a class="port">S.A.E (Software de Autoayuda Emocional)</a href="#"></p>
+                <p class="centrado">Software/App usada para mejorar tu estabilidad emocional</p>
+                <p class="negrita centrado"><a class="port">Leer más</a href="#"></p>
+            </div>
+            <div class="celdas ficha">
+                <img src="https://i.blogs.es/d75391/medir-objetos-camara-movil/1366_2000.jpg"
+                    class="tamanio3 lugar bordeado-suave">
+                <p class="negrita centrado"><a class="port">Real Object Simulator</a href="#"></p>
+                <p class="centrado">Diseñado para tomar las medidas de objetos en la vida real de la forma más precisa.
+                </p>
+                <p class="negrita centrado"><a class="port">Leer más</a href="#"></p>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor" id="Cont">
+        <div class="contenedor centrado p20">
+            <h2 class="texto">Contactanos</h2>
+            <div>
+                <h3>Si teneis alguna consulta por favor dejela aquí abajo.</h3>
+                <form class="flexo izquierdado bordeado-suave">
+                    <label for="fname" width="30px">Nombre:</label>
+                    <input type="text" class="borde" name="fname" value="">
+                    <label for="fname" class=" margen-bajo" width="30px">Correo electrónico:</label>
+                    <input type="text" class="borde" name="fname" value="">
+                    <label for="msj" class="margen-bajo">Mensaje:</label>
+                    <textarea name="message" rows="12" class=" bordeado-suave" cols="50"></textarea>
+                    <input type="submit" class="azul borde margen-bajo" value="Enviar Mensaje">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contenedor flex p20">
+            <div class="pie contenedor">
+                <h3>TECHGENE</h3>
+                <p class="esp-text">Techgene es una empresa desarrolladora de Softwares, APP y más tipos de tecnologías
+                    por el desarrollo de la propia tecnologia. Nosotros tenemos como prioridad el explorar todos los
+                    ámbitos posibles de la informática, tecnologia y parecidos.
+                    Por esa misma razón nos alegraría que confiaras en nosotros.
+                </p>
+            </div>
+            <div class="pie">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#nosotros" class="">Sobre nosotros</a></li>
+                    <li><a href="#NS" class="">Nuestros servicios</a></li>
+                    <li><a href="#PT" class="">Portfolio</a></li>
+                    <li><a href="#Cont" class="">Contacto</a></li>
+                    <li><a href="https://tonin-corbas.github.io/Class/" class="">Índice de tareas</a></li>
+                </ul>
+            </div Class="pie contenedor">
+            <div>
+
+            </div>
+            <div class="pie contenedor">
+
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -3,15 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,400;1,400;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,400;1,400;1,700&display=swap');
+
 nav {
     display: flex;
     background-color: #c473d8;
-    justify-content: space-between;
+    justify-content: space-between; 
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-esp{
     padding-left: 10px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px black;
     margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
+}
+.nav-sombra{
+     box-shadow: 0px 0px 10px black;
 }
 
 .buscador {
@@ -19,7 +25,7 @@ nav {
     padding-right: 10px;
 }
 
-h3 {
+.h3 {
     font-family: 'Libre Baskerville', serif;
     font-size:xx-large;
 }
@@ -34,7 +40,11 @@ h3 {
     font-family: 'Baskervville', serif;
 }
 
-h2 {
+.letra{
+    font-family: 'Baskervville', serif;
+}
+
+.h2 {
     color: antiquewhite;
     font-family: 'Playfair Display', serif;
     align-self: center;
@@ -81,18 +91,18 @@ h2 {
 
 
 
-ul {
+.ul {
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-li {
+.li {
     align-items: center;
     margin: 10px;
 }
 
-input {
+.click {
     border-radius: 20px;
 }
 
@@ -108,6 +118,10 @@ input {
 
 .centrado {
     text-align: center;
+}
+
+.izquierdado {
+    text-align: left;
 }
 
 .textonor {
@@ -131,6 +145,10 @@ input {
     border-radius: 10px;
 }
 
+.borde{
+    border-radius: 5px;
+}
+
 .sombreado-suave {
     box-shadow: 0px 4px 8px black;
 }
@@ -140,6 +158,7 @@ input {
 .fondo-claro{
     background-color: floralwhite;
 }
+
 .tamanio{
     max-width: 80%;
     max-height: 90%;
@@ -180,12 +199,24 @@ input {
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat( 1fr) ;
-    column-gap: 20px;
-    row-gap: 20px;
+    grid-template-rows: repeat( 1, 1fr) ;
+
+}
+
+.margen-bajo{
+    margin-top: 20px;
+}
+
+.espacio{
+    column-gap: 50px;
+    row-gap: 20px; 
+}
+
+.ajuste{
     width: 80%;
     margin: auto;
 }
+
 .celdas{
     box-shadow: 0px 0px 5px black;
     transition: transform 0.3s ease-in-out;
@@ -194,12 +225,74 @@ input {
 .lugar{
     place-self: center;
 }
-.tamanio{
+.tamanio3{
     max-height: 90%;
     max-width: 100%;
 }
+
 .ficha:hover{
     transform: scale(1.05);
+}
+
+.port {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color:darkcyan;
+    margin: 10px;
+}
+
+.port:before,
+.port:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #1100ff;
+    transition: left .85s;
+}
+
+.port:hover:before {
+    left: 0;
+}
+
+.port:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: -100%;
+    background: #1100ff;
+    transition: right .85s;
+}
+
+.port:hover:after {
+    right: 0;
+}
+
+.azul{
+    background-color:rgb(1, 144, 192);
+    color: aliceblue;
+}
+
+.pie{
+    color:azure;
+}
+footer{
+    background-color:rgb(73, 73, 73);
+}
+
+.esp-text{
+    width: 250px;
+}
+
+ul {
+    list-style: none;
+}
+.tam-letra{
+    font-size: smaller;
 }
 
 a {
@@ -207,8 +300,7 @@ a {
     overflow: hidden;
     display: inline-block;
     text-decoration: none;
-    color:darkcyan;
-    margin: 10px;
+    color:azure;
 }
 
 a:before,

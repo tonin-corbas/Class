@@ -4,9 +4,10 @@ a {
     display: inline-block;
     text-decoration: none;
     color: #000000;
-    }
-    a:before,
-    a:after {
+}
+
+a:before,
+a:after {
     content: "";
     position: absolute;
     top: 0;
@@ -15,21 +16,65 @@ a {
     height: 2px;
     background: #ff0000;
     transition: left .8s;
-    }
-    a:hover:before {
+}
+
+a:hover:before {
     left: 0;
-    }
-    a:after {
+}
+
+a:after {
     top: auto;
     bottom: 0;
     left: auto;
     right: -100%;
     background: #ff0000;
     transition: right .8s;
-    }
-    a:hover:after {
+}
+
+a:hover:after {
     right: 0;
-    }
-    body{
-        background-color: antiquewhite;
-    }
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+ul{
+    list-style: none;
+}
+
+.grid-1c-3f{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+}
+
+.grid-row-1-2{
+    grid-row: 1/2;
+}
+
+.grid-row-2-3{
+    grid-row: 2/3
+}
+.grid-3c-1f{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: 1fr;
+}
+
+.grid-col-1-2{
+    grid-column: 1/2;
+}
+
+.grid-col-2-3{
+    grid-column: 2/3;
+}
+
+.grid-col-3-4{
+    grid-column:  3/4;
+}
+
+.grid-row-3-4{
+    grid-row: 3/4
+}
+

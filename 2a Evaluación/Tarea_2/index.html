@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div>
-        <p>Hola Mundo</p>
+        <p id="result">Hola Mundo</p>
     </div>
-    <div>
-        <button onclick="tamanioPeque">-</button>
-        <button onclick="tamanioGrande">+</button>        
-    </div>
-
+    <button onclick="textResizer(8)">-</button>
+    <button onclick="textResizer(64)">+</button>
     <script>
-        function tamanioPeque(){
-            document.querySelectorAll("p")
-            for (const parrafo of parrafos){
-                parrafo.style.fontSize = "2px"
-            }
-        }
-
-        function tamanioGrande(){
-            document.querySelectorAll("p")
-            for (const parrafo of parrafos){
-                parrafo.style.fontSize = "200px"
-            }
+        function textResizer(num) {
+            var font = parseInt(num);
+            document.getElementById('result').style.fontSize = font + "px";
         }
     </script>
 </body>
+
 </html>

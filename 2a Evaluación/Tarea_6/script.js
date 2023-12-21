@@ -19,5 +19,10 @@ function Quitar(){
 }
 
 function Aviso() {
-   alert('Se van a producir cambios en la página');
+    var resultado = window.confirm('Se van a producir cambios en la página. ¿Estas seguro?');
+    if (resultado === true) {
+        window.alert('Los cambios se llevarán a cabo');
+    } else { 
+        window.alert('Pareces indeciso muy mal. Se harán los cambios aunque no quieras, aquí no tienes ni voz ni voto.');
+    }
 }

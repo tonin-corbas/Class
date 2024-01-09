@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,400;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,400;1,400;1,700&display=swap');
+
+nav {
+    display: flex;
+    background-color: #c473d8;
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-esp {
+    padding-left: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.nav-sombra {
+    box-shadow: 0px 0px 10px black;
+}
+
+.buscador {
+    align-self: center;
+    padding-right: 10px;
+}
+
+.h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: xx-large;
+}
+
+.texto {
+    font-family: 'Baskervville', serif;
+    margin-right: 10px;
+}
+
+.negrita {
+    font-weight: bold;
+    font-family: 'Baskervville', serif;
+}
+
+.letra {
+    font-family: 'Baskervville', serif;
+}
+
+.h2 {
+    color: antiquewhite;
+    font-family: 'Playfair Display', serif;
+    align-self: center;
+
+}
+
+.color {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.color:before,
+.color:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #ff0000;
+    transition: left .8s;
+}
+
+.color:hover:before {
+    left: 0;
+}
+
+.color:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: -100%;
+    background: #ff0000;
+    transition: right .8s;
+}
+
+.color:hover:after {
+    right: 0;
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.li {
+    align-items: center;
+    margin: 10px;
+}
+
+.click {
+    border-radius: 20px;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.izquierdado {
+    text-align: left;
+}
+
+.textonor {
+    width: 50%;
+    text-align: left;
+}
+
+.p20 {
+    padding: 20px;
+}
+
+.medio {
+    width: 50%;
+}
+
+.flex-item-central-vertical {
+    align-self: center;
+}
+
+.bordeado-suave {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.bordeado-suave-img-prin {
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+.borde {
+    border-radius: 5px;
+}
+
+.sombreado-suave {
+    box-shadow: 0px 4px 8px black;
+}
+
+.fondo-oscuro {
+    background-color: gainsboro;
+}
+
+.fondo-claro {
+    background-color: floralwhite;
+}
+
+.object-fit {
+    align-self: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.tamanio2 /*Para las imagenes del servicio*/{
+    max-width: 50%;
+    max-height: 60%;
+}
+
+.flexo {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna {
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+.justificar {
+    justify-content: space-evenly;
+}
+
+.ficha /*Para los servicios*/{
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.sombreado {
+    box-shadow: 0px 0px 5px black;
+}
+
+.margenes {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tamaño {
+    width: 250px;
+    height: 350px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+}
+
+.margen-bajo {
+    margin-top: 20px;
+}
+
+.espacio {
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.ajuste {
+    width: 80%;
+    margin: auto;
+}
+
+.celdas {
+    box-shadow: 0px 0px 5px black;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.lugar {
+    place-self: center;
+}
+
+.tamanio3 /*Para las imagenes del portfolio*/{
+    max-height: 90%;
+    max-width: 100%;
+}
+
+.ficha:hover {
+    transform: scale(1.05);
+}
+
+.port {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: darkcyan;
+    margin: 10px;
+}
+
+.port:before,
+.port:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #1100ff;
+    transition: left .85s;
+}
+
+.port:hover:before {
+    left: 0;
+}
+
+.port:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: -100%;
+    background: #1100ff;
+    transition: right .85s;
+}
+
+.port:hover:after {
+    right: 0;
+}
+
+.azul {
+    background-color: rgb(1, 144, 192);
+    color: aliceblue;
+}
+
+.pie {
+    color: azure;
+}
+
+footer {
+    background-color: rgb(73, 73, 73);
+}
+
+.esp-text {
+    width: 250px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tam-letra {
+    font-size: smaller;
+}
+
+.en {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+}
+
+.en:before,
+.en:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #1100ff;
+    transition: left .85s;
+}
+
+.en:hover:before {
+    left: 0;
+}
+
+.en:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: -100%;
+    background: #1100ff;
+    transition: right .85s;
+}
+
+.en:hover:after {
+    right: 0;
+}
+
+.final {
+    justify-content: center
+}
+
+.marg {
+    margin-right: 5px;
+}
+
+.ficha2 /*Para las redes sociales*/{
+    align-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ficha2:hover {
+    transform: scale(1.03);
+}
+
+a {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(12, 150, 150);
+}
+
+a:before,
+a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #ff0000;
+    transition: left .8s;
+}
+
+a:hover:before {
+    left: 0;
+}
+
+a:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: -100%;
+    background: #ff0000;
+    transition: right .8s;
+}
+
+a:hover:after {
+    right: 0;
+}
+
+.ficha3 /*Para el portfolio*/{
+    align-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ficha3:hover {
+    transform: scale(1.05);
+}
+
+.col {
+    color: aquamarine;
+}
+
+.puntero {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    nav::after {
+        background-color: #c473d8;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+        content: '☰';
+        color: aliceblue;
+        font-size: 50px;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        justify-content: center;
+    }
+
+
+    .tamanio2 /*Para las imagenes del servicio*/ {
+        max-width: 50%;
+        max-height: 60%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    .tamanio3 /*Para las imagenes del portfolio*/ {
+        max-height: 90%;
+        max-width: 100%;
+    }
+
+    .ficha3 {
+        align-content: center;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+        width: 50%;
+        height: auto;
+        justify-self: center;
+    }
+
+    .elemento-flex {
+        flex-basis: 55%;
+    }
+
+    .fondo-oscuro {
+        background-color: gainsboro;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav::after {
+        background-color: #c473d8;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+        content: '☰';
+        color: aliceblue;
+        font-size: 50px;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .ficha3 {
+        align-content: center;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+        height: auto;
+        justify-self: center;
+    }
+
+    form {
+        display: none;
+    }
+
+    .medio {
+        width: 100%;
+    }
+
+    .contenedor {
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .ficha2 {
+        align-content: center;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .textonor {
+        width: 100%;
+        text-align: left;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}

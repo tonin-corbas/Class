@@ -6,10 +6,36 @@
 
 nav {
     display: flex;
-    pointer-events: none;
     background-color: #c473d8;
     justify-content: space-between;
     font-family: 'Playfair Display', serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.hambur{
+    display: none;
+    font-size:30px;
+    cursor:pointer;
 }
 
 .nav-esp {
@@ -175,10 +201,7 @@ nav {
     height: 100%;
 }
 
-.tamanio2
-
-/*Para las imagenes del servicio*/
-    {
+.tamanio2 /*Para las imagenes del servicio*/{
     max-width: 50%;
     max-height: 60%;
 }
@@ -197,10 +220,7 @@ nav {
     justify-content: space-evenly;
 }
 
-.ficha
-
-/*Para los servicios*/
-    {
+.ficha /*Para los servicios*/{
     text-align: center;
     transition: transform 0.3s ease-in-out;
     align-items: center;
@@ -254,10 +274,7 @@ nav {
     place-self: center;
 }
 
-.tamanio3
-
-/*Para las imagenes del portfolio*/
-    {
+.tamanio3 /*Para las imagenes del portfolio*/{
     max-height: 90%;
     max-width: 100%;
 }
@@ -321,7 +338,7 @@ footer {
     width: 250px;
 }
 
-.ul {
+ul {
     list-style: none;
     padding: 0;
 }
@@ -375,10 +392,7 @@ footer {
     margin-right: 5px;
 }
 
-.ficha2
-
-/*Para las redes sociales*/
-    {
+.ficha2 /*Para las redes sociales*/{
     align-content: center;
     text-align: center;
     transition: transform 0.3s ease-in-out;
@@ -425,10 +439,7 @@ a:hover:after {
     right: 0;
 }
 
-.ficha3
-
-/*Para el portfolio*/
-    {
+.ficha3 /*Para el portfolio*/{
     align-content: center;
     text-align: center;
     transition: transform 0.3s ease-in-out;
@@ -453,27 +464,47 @@ a:hover:after {
         margin: 5px;
         display: flex;
         justify-content: space-between;
-        pointer-events: all;
-        content: '☰';
-        cursor: pointer;
         color: aliceblue;
         font-size: 50px;
         font-family: 'Playfair Display', serif;
     }
 
-    .ul {
-        /*display: none;*/
-        position: absolute;
-        overflow: hidden;
-        max-width: 80px;
-        max-height: 0px;
-        top: 60px;
-        right: 60px;
-        transition: max-height 300ms ease;
+    .oculto{
+        display: none;
     }
 
-    nav.showArticle+.ul {
-        max-height: 300px;
+    .hambur{
+        display: block;
+        font-size:30px;
+        cursor:pointer;
+        align-self: center;
+        padding-right: 10px;
+        color: aliceblue;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.8s;
+        padding-top: 60px;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+    .ul {
+        display: none;
     }
 
     .flex {
@@ -485,10 +516,7 @@ a:hover:after {
     }
 
 
-    .tamanio2
-
-    /*Para las imagenes del servicio*/
-        {
+    .tamanio2 /*Para las imagenes del servicio*/ {
         max-width: 50%;
         max-height: 60%;
     }
@@ -500,10 +528,7 @@ a:hover:after {
         justify-content: center;
     }
 
-    .tamanio3
-
-    /*Para las imagenes del portfolio*/
-        {
+    .tamanio3 /*Para las imagenes del portfolio*/ {
         max-height: 90%;
         max-width: 100%;
     }
@@ -529,16 +554,19 @@ a:hover:after {
 
 @media screen and (max-width: 480px) {
     nav::after {
-        pointer-events: all;
         background-color: #c473d8;
         padding: 5px;
         margin: 5px;
         display: flex;
         justify-content: space-between;
-        content: '☰';
         color: aliceblue;
         font-size: 50px;
         font-family: 'Playfair Display', serif;
+    }
+
+    .oculto{
+        display: block;
+        padding-left: 10px;
     }
 
     .ficha3 {

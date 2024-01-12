@@ -12,7 +12,7 @@
 <body>
     <nav class="nav-esp nav-sombra">
         <h2 class="h2">TECHGENE</h2>
-        <ul class="ul" id="ul">
+        <ul class="ul">
             <li class="li"><a href="#nosotros" class="color">Sobre nosotros</a></li>
             <li class="li"><a href="#NS" class="color">Nuestros servicios</a></li>
             <li class="li"><a href="#PT" class="color">Portfolio</a></li>
@@ -22,6 +22,20 @@
         <form class="buscador">
             <input type="search" name="q" placeholder="Buscar..." class="click" />
         </form>
+        <div class="sidenav" id="ul">
+            <ul>
+                <li><a href="javascript:void(0)" style="color: aliceblue;" class="closebtn" onclick="closeNav()">&times;</a></li>
+                <li class="li"><a href="#nosotros" class="color" onclick="closeNav()">Sobre nosotros</a></li>
+                <li class="li"><a href="#NS" class="color" onclick="closeNav()">Nuestros servicios</a></li>
+                <li class="li"><a href="#PT" class="color" onclick="closeNav()">Portfolio</a></li>
+                <li class="li"><a href="#Cont" class="color" onclick="closeNav()">Contacto</a></li>
+                <li class="li"><a href="https://tonin-corbas.github.io/Lenguaje-de-marcas/" class="color">Índice de tareas</a></li>
+            </ul>
+            <form class="buscador oculto">
+                <input type="search" name="q" placeholder="Buscar..." class="click" />
+            </form>
+        </div>
+        <span class="hambur" onclick="openNav()">&#9776;</span>
     </nav>
     <div class="fondo-oscuro" id="nosotros">
         <div class="contenedor flex p20 fondo-oscuro">
@@ -152,7 +166,7 @@
             </div>
         </div>
         <div class="centrado letra pie">© Derechos reservados y deseñada por <a class="col puntero"
-                href="https://github.com/tonin-corbas/Class">@tonin-corbas</a>
+                href="https://github.com/tonin-corbas/Lenguaje-de-marcas/">@tonin-corbas</a>
         </div>
     </footer>
     <script src="cod.js"></script>

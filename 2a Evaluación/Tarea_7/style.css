@@ -457,13 +457,9 @@ a:hover:after {
     cursor: pointer;
 }
 
-.content {
-    padding: 16px;
-  }
-  
 .sticky {
-    position: fixed;
-    top: 10;
+    position: sticky;
+    top: 10px;
     width: 98%;
   }
 #navbar{

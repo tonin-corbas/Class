@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="nav-esp nav-sombra" id="navbar">
+    <nav class="nav-esp nav-sombra sticky" id="navbar">
         <h2 class="h2">TECHGENE</h2>
         <ul class="ul">
             <li class="li"><a href="#nosotros" class="color">Sobre nosotros</a></li>
@@ -37,9 +37,9 @@
         </div>
         <span class="hambur" onclick="openNav()">&#9776;</span>
     </nav>
-    <div class="fondo-oscuro content" id="nosotros">
-        <div class="contenedor flex p20 fondo-oscuro content">
-            <div class="textonor medio flex-item-central-vertical content ">
+    <div class="fondo-oscuro" id="nosotros">
+        <div class="contenedor flex p20 fondo-oscuro">
+            <div class="textonor medio flex-item-central-vertical">
                 <h3 class="h3">Sobre nosotros</h3>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa animi eum
                     aliquid voluptates laborum suscipit enim voluptate accusamus est quod assumenda, sint debitis
@@ -51,42 +51,42 @@
                     tempora earum, dolorum ratione saepe nostrum. Quae exercitationem iste voluptatum.
                 </p>
             </div>
-            <div class="bordeado-suave-img-prin sombreado-suave content">
+            <div class="bordeado-suave-img-prin sombreado-suave">
                 <img src="https://idhbc.es/wp-content/uploads/2022/05/funiber-tecnologia-empresas.jpg"
                     class="bordeado-suave-img-prin object-fit">
             </div>
         </div>
     </div>
     </div>
-    <div class="contenedor content" id="NS">
+    <div class="contenedor" id="NS">
         <h3 class="h3">Nuestros servicios</h3>
-        <div class="flex  justificar content">
-            <div class="ficha tamaño margenes sombreado content">
+        <div class="flex  justificar">
+            <div class="ficha tamaño margenes sombreado">
                 <img src="I+D.png" class="tamanio2">
                 <p class="negrita puntero centrado"><a href="#">I+D</a></p>
                 <p>centrado en actividades de investigación. Encargados de llevar a cabo mejoras de los productos.</p>
             </div>
-            <div class="ficha tamaño margenes sombreado content">
+            <div class="ficha tamaño margenes sombreado">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAAC+vr7U1NSPj4+FhYXw8PDt7e309PQJCQlqamopKSlkZGQ4ODiCgoK6urqtra2cnJzd3d3Ly8u0tLQWFhYgICB0dHSjo6Pk5ORsbGyYmJhBQUHR0dFGRkbHx8dXV1cxMTFPT087OztLS0sZGRleXl4zMzMQEBCVEQsQAAAJzElEQVR4nO2d63rqKhCGYzUm1i5PtcbYqrG21vu/wm1lhnDMwWIAN9+fPiaS8ppkGIYBoohR/3236vmu1e69H6nV/7RdOWP6VDLObFfLqGYy4Nx2nQxrLgLubdfIuPYC4ch2hYxrxAOu8fhu4Lt2iLLmCD+AL9HYWZ+UAOMHezAnx1aprVoZVQqNes4c65ND79YqZVbvBIdtFMGSbq3Vyay2BIe1pk8ytM+CR/KJORQIPVMg9F8NCYfL7MUXZcthe0Lqx3midVvCZ3t1vVHP7QhjezW9WXEbwtxePf+gvAXhxF41/6BJC0JwzsfHfz7oOCbVXbUgPF8/FpEvKq71PePHesIh+RhHvggMIzaKgTAQOqhAGAjdVyB0hzCZTV6etXqZzDQBXW8Il71aTZUFfSF8qgfs9V5VJX0hbDTCPlaV9ISwYadUNXjkCWGDt1CsN8oTQkgkeNOJdOmUtsYvQm3Qdv8ohAvd+ddHIdTew0AYCG8mnGanOK//Wr1cJSThfzE95xY5SghJAUpPo6XcJIRr9XqfTTn0cpNwjIRCBtItcpKQHd/4s7VxkfCVAeztmrOo5SBhynfo/ppR5SChOAan9SibyT1CKen20IZHVgVh+qunzglFwF5vUAexnGzWQ91JLeH0zP6T7ghVuQzVqX85eW8VSeaVhEKAqjPCqQKw91NVIsXGUxku0xMKkyS6IhzCk3N+u/5Bq1pVZIB1/G5HeLRDeIL/tyQ3Js6q789FaVlJVTBJTyiY7I4IMS4Wp+QeTrD+Z20R9NEvOrYiTP9ZIEzgv62iBAipPch0ZdhaKu+0vrWYXpPwN10SFj0sQAmpbVU/gvyko6IdIdG2Q0LM6ru0fyUh+nBv6gav7IXoMBzyaTD8/juhoSSkPs6zqgy8uEewSC9uE8L0k6sfyhBGaE9VdYAya3yDFX0tdwjRKF77EixhhN6V/JzC/X1LI7AXG4cJF4BBTD5HCLagd5IK7eiPgo+4HNhxhhCf0VwmpGmpouuJ6L+D1OArTCJRrhDiMwpxGZ4wOqjvUMFQ9dVfcYYQ61dESkI8vVMWSlhcqavlCCE2a3gHUp6Qutdc6A2cAXB3wOqcxbwKNwjFFy0Bt/hIg94H+AbTHKBxwSjHUfEjuEKIrRkaS2boHR86NLWMJZlwt7B0DVwkBHftjM8o+qe/wmMwKfxMG0X8WTZ0IqvwILhEGAtF3xhC+pxCnzwXCsla8Rd3wvMGv4w+gdg2skT5WCDUAYqV1RNulxdNB10QYnAGXyk6MFMeymHe+xhNJdPzFcXNRdYTflX8LKYJ8ZWid3F7+rjqE5cwQEBKnHKhQEHcsKOOcMCXuXNrQed7abzyHENSo6FYQqWiCeEHX+beLT5GoNSICR3JoJHTQxUhh6Mj3PFF7u6XvlQgJtS20kAM9HwPogMzkW+ijlDIBrt/34IiSo5leQfL9+uHHJDi3PhGM6M5Wksz5xbt6KAHTB9UATE5yIAa9yWiDQ8T8tC3Fmnyq2ljQvCr2DGGdlEM6snwd4ZaBOa3g1CntFhM6d2V/qs5n4ZUhVsDo2Wsjd5Fto9HjToDiIPEqvRs6HCU/qtBwuTi3I+54cxb46XsvUHAqfy9mAwAcqL09FcySHh5RBb8r9o6qg9uBhMUHCoA0eVZKQUn6dtslFBU+5EZ4nwyWTTQkVL1fGuEP7ZThOnicP3G+GkJmoL7OWB6vsxoU5Wwyg4RpvF3RYV31NI0TE3Hl9kdwqRu1gCW85bwUFvntd+EFf09qoQlLDIQ+Hs7/Jw5SvjTgHDNEorvZWlu3SRs9Ohl7FeXWHTBE92TcL765mvfnvB9q1SfWKGTZcJJWYmbCXVpz+QZLu5B2DzWBl0z1jF1mzDPrqtXHBoT/q1/iOYiyVVKxuYJsZ/V65awWkYtzQt/7bsTpocGhHOThJ1nfQnhS6Vyk4Qn/tr3J0z5zBiVoM6GCIX3ooNIVF4Vxf4VBibM2dJTcdGuM8IoxcQZpb5pFay1+CZyE/fkUR0vZ6AlvJ4Tppn1mhBCh//KA335/z8Y4VbACYSBMBAGQvOE/UclpOMQ+0cjBId/LA5DPAyh1m97Yy7rMWEqdNk4lcFCjwmrx5RoloK/hNz0X1nUwBojTPsXLWbdEQqdbkl4E00R8lGFLgjhXxUbfjm1zTP0/nHKsyFCYROjDghh4FMxhQvK4VwKQ4Rd50TRiLJqEQXSKOLoviHCjvPaInoPFTkysOOQ4XvYbW4iUzHVAgPkjOlIFG/ZuiNUTU3nzxhrLfrXUFDcNaE8rUe8u9bGngwRKmwpvKFog/z1achZxSRJsLKY0OcvIcmTLeQT+aMQEtflQz6x4JH8JSR9J8VKJoIt8JeQJCYq1n7Y81f2lxBaYPkEXAbH+P0l3OgIIase86v9Jcx0hML6nP4SxjpCmB9D53h5SzioIcTMbX8JITtRTsCf8yccJMQXKB1VEgog0gn8mAtV0uQm4uclXwlJW7nePOEIa7TQEm4mRGBKPuKJSjFMEs2kExBvwM9wmVPMf/6kl+U+xwVfCenqz8LlmFMffI02WsIHUyD0X4HQfykIR48iLeF+mDyChnstodad8ExhL1n/FQj9VyD0X4HQfwXCOyodFEUx0GyAZ072CHH6+r0R7RHiql/33qLHHiEuafV15/9jjxBX5lalAJiUPUJcHaRizrURWbSlefa1+8qM7A5VpdAe+q9A6L8Cof/6XxJWDD76KLhh7Jp7/W68qa40kR/JISxaqd8lxifBgD+/0QYmGq8TeXU8z5TgmrAnFfZFY99FSYQHUtg26gEk7qo5HNWX8UojqYvWry/klRRte36wXSmDOqj7oLOq5RB90rdue77Lo7qOhQlpN2oDCU5fdZfbgIkTJ8Ld/p/jdTfOJ6SWqdLseMGYu38usWJ6vlrgQ/rnTQVCqkDorAIhVSB0VoGQKhA6q0BIFQidVSCkCoTOqm0PeFv7RQeUv87maxQkB2XrOuF2fPTAfPZ691SGm/TK73D3N33pFkS3qGZbyjRXYRtIULqrr3NL/bt7BmMrvdTXuLVU269b076+vjeo3g53pybblrTXj22sUrh5QdZfmFAf01C1c547F0zCNpcXC4iq9dLsCObnm2unIUtTtZqYHZHUh7O0HfztIoSq1cTsKBC2VyDsWrFpS+McIaTomOvEQpqdau1JOwKn7cfUY5qCj+SO25ZiLs7zQC8unrF9r/jmBt02h3oXlbuyoJiJMk22G1IuzGhNzTYcpS7Kov67v3IqltFoXY0Cvz1tBFgfputUs/oal09do+6kO243aFsfxyg7Q4fa7x5djJ++xj8VW12NvpicoDSryi87HyYmQ23/ASA8CMsRLAnCAAAAAElFTkSuQmCC"
                     class="tamanio2">
                 <p class="negrita puntero"><a href="#">Diseño de productos</a></p>
                 <p>Encargados de Diseñar y pensar el apartado gráfico de nuestros productos.</p>
             </div>
-            <div class="ficha tamaño margenes sombreado content">
+            <div class="ficha tamaño margenes sombreado">
                 <img src="SEO.png" class="tamanio2">
                 <p class="negrita puntero"><a href="#">SEO y dirección de marketing</a></p>
                 <p>Encargados de la optimización del motor y de estrategias centradas al marketing</p>
             </div>
-            <div class="ficha tamaño margenes sombreado content">
+            <div class="ficha tamaño margenes sombreado">
                 <img src="Technical support.png" class="tamanio2">
                 <p class="negrita puntero"><a href="#">Soporte técnico</a></p>
                 <p>Encargados de la ayuda a los usuarios y de arreglar sus problemas</p>
             </div>
         </div>
     </div>
-    <div class="fondo-oscuro p20 content" id="PT">
+    <div class="fondo-oscuro p20" id="PT">
         <h3 class="contenedor p20 h3">Nuestro Portfolio</h3>
-        <div class="grid ajuste espacio content">
+        <div class="grid ajuste espacio">
             <div class="celdas ficha3">
                 <img src="https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/computer-network-t.jpg"
                     class="tamanio3 lugar bordeado-suave">
@@ -94,7 +94,7 @@
                 <p class="centrado">Utensilio usado para crear páginas web a gusto de cada persona</p>
                 <p class="negrita centrado"><a class="port puntero">Leer más</a href="#"></p>
             </div>
-            <div class="celdas ficha3 content">
+            <div class="celdas ficha3">
                 <img src="https://www.inesdi.com/sites/default/files/2022-05/tipos%20de%20software.jpg"
                     class="tamanio3 lugar bordeado-suave">
                 <p class="negrita centrado"><a class="port puntero">S.A.E (Software de Autoayuda Emocional)</a href="#">
@@ -102,7 +102,7 @@
                 <p class="centrado">Software/App usada para mejorar tu estabilidad emocional</p>
                 <p class="negrita centrado"><a class="port puntero">Leer más</a href="#"></p>
             </div>
-            <div class="celdas ficha3 content">
+            <div class="celdas ficha3">
                 <img src="https://i.blogs.es/d75391/medir-objetos-camara-movil/1366_2000.jpg"
                     class="tamanio3 lugar bordeado-suave">
                 <p class="negrita centrado"><a class="port puntero">Real Object Simulator</a href="#"></p>
@@ -112,10 +112,10 @@
             </div>
         </div>
     </div>
-    <div class="contenedor content" id="Cont">
-        <div class="contenedor centrado p20 content">
+    <div class="contenedor" id="Cont">
+        <div class="contenedor centrado p20">
             <h2 class="texto">Contactanos</h2>
-            <div class="content">
+            <div>
                 <h3>Si tiene alguna consulta por favor dejela aquí abajo.</h3>
                 <form class="flexo izquierdado bordeado-suave">
                     <label for="fname" width="30px">Nombre:</label>
@@ -130,8 +130,8 @@
         </div>
     </div>
     <footer>
-        <div class="contenedor flex p20 pie final content">
-            <div class="elemento-flex content">
+        <div class="contenedor flex p20 pie final">
+            <div class="elemento-flex">
                 <h3 class="abajo">TECHGENE</h3>
                 <p class="esp-text">Techgene es una empresa desarrolladora de Softwares, APP y más tipos de tecnologías
                     por el desarrollo de la propia tecnologia. Nosotros tenemos como prioridad el explorar todos los
@@ -139,7 +139,7 @@
                     Por esa misma razón nos alegraría que confiaras en nosotros.
                 </p>
             </div>
-            <div class="elemento-flex content">
+            <div class="elemento-flex">
                 <h3 class="margen-bajo">Navegación</h3>
                 <ul class="esp-text">
                     <li><a href="#nosotros" class="en">Sobre nosotros</a></li>
@@ -149,13 +149,13 @@
                     <li><a href="https://tonin-corbas.github.io/Class/" class="en">Índice de tareas</a></li>
                 </ul>
             </div>
-            <div class="pie elemento-flex content">
+            <div class="pie elemento-flex">
                 <h3>Contactanos</h3>
                 <p>971 606 499</p>
                 <p class="letra">info@cidetechgene.com</p>
                 <p>Carrer de l'Arner, 3</p>
             </div>
-            <div class="pie elemento-flex content">
+            <div class="pie elemento-flex">
                 <h3>Redes sociales</h3>
                 <i class="fa-brands fa-facebook ficha2 marg puntero"></i>
                 <i class="fa-brands fa-x-twitter ficha2 marg puntero"></i>
@@ -164,7 +164,7 @@
                 <i class="fa-brands fa-linkedin ficha2 marg puntero"></i>
             </div>
         </div>
-        <div class="centrado letra pie content">© Derechos reservados y deseñada por <a class="col puntero"
+        <div class="centrado letra pie">© Derechos reservados y deseñada por <a class="col puntero"
                 href="https://github.com/tonin-corbas/Lenguaje-de-marcas/">@tonin-corbas</a>
         </div>
     </footer>

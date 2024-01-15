@@ -457,6 +457,21 @@ a:hover:after {
     cursor: pointer;
 }
 
+.content {
+    padding: 16px;
+  }
+  
+.sticky {
+    position: fixed;
+    top: 10;
+    width: 98%;
+  }
+#navbar{
+    z-index: 500;
+    overflow: hidden;
+    background-color: #c473d8;
+}
+  
 @media screen and (max-width: 1024px) {
     nav::after {
         background-color: #c473d8;

@@ -489,7 +489,7 @@ a:hover:after {
         z-index: 1;
         top: 0;
         right: 0;
-        background-color: #111;
+        background-color:black;
         overflow-x: hidden;
         transition: 0.8s;
         padding-top: 60px;

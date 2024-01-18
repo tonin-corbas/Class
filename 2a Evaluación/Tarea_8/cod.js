@@ -1,4 +1,5 @@
-var myNodelist = document.getElementsByTagName("LI");
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName('li');
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
@@ -33,7 +34,7 @@ function nuevoElemento() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("¡¡Tienes que escribir algo para que funcione la lista, no te enteras!!");
   } else {
     document.getElementById("listask").appendChild(li);
   }

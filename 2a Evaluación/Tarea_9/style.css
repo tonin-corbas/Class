@@ -1,0 +1,25 @@
+body{
+    background-color: #8e8e89 ;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+h2{
+    color: #0404e2;
+}
+
+.escala{
+    max-width: 30%;
+    max-height: 40%;
+}
+
+.contenedor{
+    background-color: 
+    linear-gradient(to center, #4040fb, #5b5b56);
+    border-radius: 10px;
+    box-shadow: 0x 0px 5px black;
+    padding: 15px;
+}

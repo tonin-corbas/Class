@@ -12,9 +12,9 @@
     <div class="contenedor">
         <h1>Vlog de viaje</h1>
     </div>
-    
 
-    <div class="">
+
+    <div class="articulos">
         <h2>Explorando la Ciudad Antigua</h2>
         <img src="Ciudad Antigua.png" alt="Ciudad Antigua">
         <p>En nuestro último viaje, exploramos las estrechas calles de la antigua ciudad. Descubre las maravillas
@@ -22,7 +22,7 @@
         <p>Fecha de publicación: 23 de enero de 2024</p>
     </div>
 
-    <div class="">
+    <div class="articulos">
         <h2>Aventuras en la Naturaleza</h2>
         <img src="selva negra.png" alt="Aventuras en la Naturaleza" class="escala">
         <p>Nos adentramos en la naturaleza salvaje para experimentar emocionantes aventuras al aire libre. Desde
@@ -30,19 +30,24 @@
         <p>Fecha de publicación: 20 de enero de 2024</p>
     </div>
 
-    <div>
+    <div class="cajacom">
         <h2>Caja de comentarios</h2>
         <div>
-            <input type="text" id="" placeholder="Escribe tu comentario aquí.">
-            <button onclick="">Enviar</button>
+            <input type="text" id="input" placeholder="Escribe tu comentario aquí.">
+            <button id="enviar">Enviar</button>
+            <button id="ocultar" type="submit">Ocultar comentarios</button>
+        </div>
+
+        <div id="seccom">
+            <h3>Comentarios</h3>
+            <ul id="list">
+    
+            </ul>
         </div>
     </div>
-    <ul>
-
-    </ul>
-    <script src="cod.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="cod.js"></script>
 </body>
 
 </html>

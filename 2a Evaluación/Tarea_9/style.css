@@ -17,9 +17,49 @@ h2{
 }
 
 .contenedor{
-    background-color: 
-    linear-gradient(to center, #4040fb, #5b5b56);
+    background: linear-gradient(rgb(64, 64, 251), rgb(91, 91, 86));
     border-radius: 10px;
     box-shadow: 0x 0px 5px black;
     padding: 15px;
+}
+
+.eliminar{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.articulos{
+    text-align: center;
+}
+
+#seccom{
+    background: linear-gradient(rgb(47, 44, 121), rgb(91, 91, 86));
+    color: black;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#list{
+    list-style: none;
+    margin-right: 10px;
+}
+
+.eliminar:hover{
+    background-color: antiquewhite;
+    color: crimson;
+}
+
+.cajacom{
+    background: linear-gradient(rgb(45, 44, 85), rgb(48, 44, 155));
 }

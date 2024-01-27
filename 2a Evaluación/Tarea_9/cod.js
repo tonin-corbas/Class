@@ -4,7 +4,8 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-
+    
+//Este js permite enviar el comentario pulsando enter
         $('input').keyup(function(event) {
             if (event.which === 13)
             {
@@ -19,6 +20,7 @@ $(document).ready(function(){
             }
         });
 
+        //Este envia el comentario usando el botón de enviar
     $("#enviar").click(function(){
         let coment = $("#input").val();
         if(coment !== ""){

@@ -5,7 +5,6 @@ function ToDoItem({content}: {content: String }){
     return(
         <div className="">
             <li>{content}</li>
-            <Button variant="primary">Botón</Button>
         </div>
     )
 }

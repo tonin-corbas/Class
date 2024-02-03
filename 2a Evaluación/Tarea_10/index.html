@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
     <title>Tarea 10</title>
 </head>
 
@@ -11,22 +13,50 @@
     <nav>
         <h1>VuelaGO!</h1>
         <p>Tu buscador de vuelos de confianza.</p>
+        <a href="https://tonin-corbas.github.io/Lenguaje-de-marcas/">Índice de tareas</a>
     </nav>
     <main>
-        <p>
-            <label for="fecha">Elija las fechas del viaje</label>
-            <input type="text" id="fecha">
-        </p>
-        <p>
-            <label for="spinner" id="personas">Número de viajeros:</label>
-            <input type="number" id="spinner" name="tentacles" min="1">
-        </p>
-        
+        <div class="grid-col-1-row-1">
+            <img src="viajes1.gif" alt="Gif que muestra un avión" class="tamanio">
+        </div>
+        <div class="grid-col-2-row-2">
+            <p>
+                <label for="datepicker" id="datepicker">Elija la fecha de salida</label>
+                <input type="text" id="datepicker">
+            </p>
+            <p>
+                <label for="datepicker">Elija la fecha de vuelta</label>
+                <input type="text" id="fechaVuelta">
+            </p>
+        </div>
+        <div class="grid-col-2-row-3">
+            <p>
+                <label for="spinner" id="personas">Número de viajeros:</label>
+                <input type="number" id="spinner" name="tentacles" min="1">
+            </p>
+            <button id="Reservar">Buscar vuelos</button>
+        </div>
+        <div class="grid-col-2-row-1">
+            <p>
+                <label for="destino">Elija el destino de su viaje</label>
+                <input type="text" id="destino">
+            </p>
+            <p>
+                <label for="precio">Rango de precio:</label>
+                <input type="text" id="precio">
+            </p>
+            <div id="slider"></div>
+        </div>
+        <div class="grid-col-3-row-1">
+            <img src="viajes2.gif" alt="Gif que muestra un man saltando un avión" class="tamanio">
+        </div>
     </main>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="cod.js"></script>
 </body>
+
+</html>
 
 </html>

@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(function () {
-        var datepicker = $("#datepicker").datepicker({
+        var datepicker = $("#fechaIda").datepicker({
             dateFormat: "dd/mm/yy",
             onClose: function (selectedDate) {
                 $("#fechaVuelta").datepicker("option", "minDate", selectedDate);
@@ -9,7 +9,7 @@ $(document).ready(function () {
         var fechaVuelta = $("#fechaVuelta").datepicker({
             dateFormat: "dd/mm/yy",
             onClose: function (selectedDate) {
-                $("#datepicker").datepicker("option", "maxDate", selectedDate);
+                $("#fechaIda").datepicker("option", "maxDate", selectedDate);
             }
         });
         

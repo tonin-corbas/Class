@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "../2a Evaluación/tarea_11/src/components/TodoItem.tsx"  ]
 }

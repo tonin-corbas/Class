@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ToDoItem from "./TodoItem";
-import { Button } from "react-bootstrap";
 
 type Todo = {
     id: number;
@@ -23,7 +22,7 @@ function ToDoList() {
 
 
         if (task.trim().length === 0) {
-            alert("Please enter a value!");
+            alert("Porfavor pon una tarea en la lista para asi poder sentirme realizado");
             return;
         }
 
@@ -46,7 +45,12 @@ function ToDoList() {
         todos.splice(index, 1, todo);
 
         setTodos([...todos]);
+        // return void
     };
+    // const handleChangeChecked = (todo: Todo) => {
+    //     setTodos(prevTodos => [...prevTodos, {id: todo.id, task: todo.task, isCompleted: !todo.isCompleted}])
+    //     // return void
+    // };
 
     const handleDelete = (id: number) => {
         const index = todos.findIndex((todo) => todo.id === id);
@@ -65,14 +69,9 @@ function ToDoList() {
             <ul>
                 {todos.map((todo) => (
                     <li key={todo.id}>
-                        {todo.task}
-                        <input
-                            type="checkbox"
-                            checked={todo.isCompleted}
-                            onChange={() => handleChangeChecked(todo)}
-                        />
-                        <button onClick={() => handleDelete(todo.id)}>Remove</button>
+                        <ToDoItem todo={todo} handleDelete={handleDelete} handleChangeChecked={handleChangeChecked}/>
                     </li>
+                    
                 ))}
             </ul>
         </div>

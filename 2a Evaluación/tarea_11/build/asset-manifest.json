@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a Evaluación/tarea_11/build/static/css/main.f855e6bc.css",
+    "main.js": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a Evaluación/tarea_11/build/static/js/main.e1701edf.js",
+    "static/js/592.eba61dd0.chunk.js": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a Evaluación/tarea_11/build/static/js/592.eba61dd0.chunk.js",
+    "index.html": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a Evaluación/tarea_11/build/index.html",
+    "main.f855e6bc.css.map": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a Evaluación/tarea_11/build/static/css/main.f855e6bc.css.map",
+    "main.e1701edf.js.map": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a Evaluación/tarea_11/build/static/js/main.e1701edf.js.map",
+    "592.eba61dd0.chunk.js.map": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a Evaluación/tarea_11/build/static/js/592.eba61dd0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.e1701edf.js"
+  ]
+}

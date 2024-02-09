@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "set PUBLIC_URL=https://tonin-corbas.github.io/Lenguaje-de-marcas/2a Evaluación/tarea_11/build&&react-scripts build",
+    "build": "set PUBLIC_URL=https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20%Evaluación/tarea_11/build&&react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

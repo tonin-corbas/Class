@@ -60,7 +60,7 @@ export const filas = [
     cantidad: 4,
     precio: 6,
     tienda: "Mercadona",
-    notas: "Comprar 2",
+    notas: "Comprar 4",
     comprado: false,
     imagen: "https://images3.memedroid.com/images/UPLOADED219/5fb56fccafe90.jpeg"
 },

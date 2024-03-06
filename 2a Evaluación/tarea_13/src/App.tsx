@@ -7,7 +7,7 @@ import Inicio from './views/Inicio';
 import Interes from './views/Interes';
 import Ocio from './views/Ocio';
 import Restaurantes from './views/Restaurantes';
-import fondo3 from '../img/fondo3.png';
+import fondo3 from './img/fondo3.png';
 
 function App() { return (
   <div style={{

@@ -25,7 +25,7 @@ const Hotel = () => {
 
   return (
     <Container className="my-4">
-      {/* <h1 className='text-'>Nuestros Hospedajes</h1> */}
+      <h1 className='text-light text-center'>Nuestros Hospedajes</h1>
       <Row className="mb-4">
         {hotelData.slice(0, 6).map((part, index) => (
           <Col key={index} xs={12} md={4}>

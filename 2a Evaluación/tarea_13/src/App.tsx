@@ -20,7 +20,7 @@ function App() { return (
     <Router>
       <Navegador />
       <Routes>
-        <Route path="/inicio" element={<Inicio />} />
+        <Route path="/" element={<Inicio />} />
         <Route path="/puntos-de-interes" element={<Interes />} />
         <Route path="/restaurantes" element={<Restaurantes />} />
         <Route path="/hoteles" element={<Hotel />} />

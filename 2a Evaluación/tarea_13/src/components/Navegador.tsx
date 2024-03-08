@@ -22,7 +22,7 @@ const Navegador = () => {
         </Offcanvas.Header>
         <Offcanvas.Body className=' bgd-flex justify-content-center' >
           <Nav>
-            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="/inicio">Inicio</Nav.Link>
+            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="/">Inicio</Nav.Link>
             <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="/puntos-de-interes">Puntos de Interés</Nav.Link>
             <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="/restaurantes">Restaurantes</Nav.Link>
             <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="/hoteles">Hoteles</Nav.Link>

@@ -16,7 +16,7 @@ const Inicio = () => {
           </small>
         </Col>
       </Row>
-      <Row className='text-center bgd-flex text-center'>
+      <Row className='text-center bgd-flex justify-content-center'>
         <Col xs={12} md={8}>
           <img src={bg} alt="Imagen descriptiva de baldur's gate" style={{width: '100%', height: 'auto'}}/>
         </Col>

@@ -8,14 +8,16 @@ import Interes from './views/Interes';
 import Ocio from './views/Ocio';
 import Restaurantes from './views/Restaurantes';
 import fondo3 from './img/fondo3.png';
+import Footer from './components/Footer';
 
 function App() { return (
   <div style={{
     backgroundImage: `url(${fondo3})`,
-    height: '100%', // Esto hará que la imagen ocupe toda la altura de la ventana
+    height: 'auto', // Esto hará que la imagen ocupe toda la altura de la ventana
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    marginBottom: '0em'
   }}>
     <Router>
       <Navegador />
@@ -26,6 +28,8 @@ function App() { return (
         <Route path="/hoteles" element={<Hotel />} />
         <Route path="/actividades-de-ocio" element={<Ocio />} />
       </Routes>
+      <Footer />
+      {/* footer */}
     </Router>
   </div>
 );

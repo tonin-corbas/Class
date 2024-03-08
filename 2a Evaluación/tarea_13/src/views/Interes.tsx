@@ -9,7 +9,7 @@ import alzaluna from "../img/alzaluna.png";
 
 const Interes = () => {
   const hotelData = [
-    { titulo:'Arboleda esmeralda', imageUrl: arboleda, text: 'Puede ser el mismo lugar que el hospedaje pero tambien es un lugar di¡onde podrás encontrar y ver a druidas e incluso podras presenciar la estatua de su Dios Sylvannus. En este lugar estarás mas cerca que nunca de la naturaleza.' },
+    { titulo:'Arboleda esmeralda', imageUrl: arboleda, text: 'Puede ser el mismo lugar que el hospedaje pero tambien es un lugar donde podrás encontrar y ver a druidas e incluso podras presenciar la estatua de su Dios Sylvannus. En este lugar estarás mas cerca que nunca de la naturaleza.' },
     { titulo:'Nautiloide estrellado',imageUrl: nautiloide, text: 'En este lugar podrás obsevar como es el interior de las naves de guerra de la raza de los Ilícidos raza que gobierna ' },
     { titulo:'Colonia Miconida',imageUrl: colonia, text: 'En este lugar podrás ver como viven los micónidos y como se reproducen, además podrás presenciar el intento de usurpación del liderazgo de la colónia por un extranjero.' },
     { titulo:'GrymForge',imageUrl: grymforge2, text: 'En caso de que hayas decidido ir mas allá de lo que ves en la grymforge, podrás usar la forja de adamantita pero con el peligro de enfrentarte al golem Grym, un golem gigante hecho de adamantita y resistente a todos los elementos.' },

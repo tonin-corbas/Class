@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/css/main.db62923b.css",
+    "main.js": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/js/main.e0477797.js",
+    "static/js/453.9a969a03.chunk.js": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/js/453.9a969a03.chunk.js",
+    "static/media/espe.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/espe.7d08f7a7648cf1c3d708.png",
+    "static/media/luz.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/luz.2e5b775c5aaec2bd8877.png",
+    "static/media/fondo3.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/fondo3.36d4f45f3498636a9922.png",
+    "static/media/camp.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/camp.f13723fef8855ac9e61d.png",
+    "static/media/nautiloide.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/nautiloide.cb457911c4639e0da19b.png",
+    "static/media/colonia.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/colonia.7f243722e45398f0c105.png",
+    "static/media/taberna.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/taberna.ef750f3bc3ac73c72282.png",
+    "static/media/creche.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/creche.d6593aafec8becebaeec.png",
+    "static/media/bg.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/bg.a1ce8d4f94049c35318c.png",
+    "static/media/logo.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/logo.06043039b4552907f374.png",
+    "static/media/grymforge.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/grymforge.2fe2b2d59846d91c0b38.png",
+    "static/media/alzaluna.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/alzaluna.7b21527f1348d8a3d405.png",
+    "static/media/fondo2.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/fondo2.170a81bf95c8827be3a8.png",
+    "static/media/campo.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/campo.fd12bbf0fffab91af3d9.png",
+    "static/media/circo.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/circo.90da94ba109811c5be19.png",
+    "static/media/waukeen.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/waukeen.a456b0ae66f6b4f69eab.png",
+    "static/media/arboleda.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/arboleda.08be69d2a6d864712621.png",
+    "static/media/grymforge2.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/grymforge2.44c7b0614098029cd6b9.png",
+    "static/media/ordalia.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/ordalia.d94d1fbc9cd5dd37c33c.png",
+    "index.html": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/index.html",
+    "main.db62923b.css.map": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/css/main.db62923b.css.map",
+    "main.e0477797.js.map": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/js/main.e0477797.js.map",
+    "453.9a969a03.chunk.js.map": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/js/453.9a969a03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db62923b.css",
+    "static/js/main.e0477797.js"
+  ]
+}

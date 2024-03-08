@@ -20,11 +20,11 @@ function App() { return (
     <Router>
       <Navegador />
       <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/points-of-interest" element={<Interes />} />
-        <Route path="/restaurants" element={<Restaurantes />} />
-        <Route path="/hotels" element={<Hotel />} />
-        <Route path="/leisure-activities" element={<Ocio />} />
+        <Route path="/inicio" element={<Inicio />} />
+        <Route path="/puntos-de-interes" element={<Interes />} />
+        <Route path="/restaurantes" element={<Restaurantes />} />
+        <Route path="/hoteles" element={<Hotel />} />
+        <Route path="/actividades-de-ocio" element={<Ocio />} />
       </Routes>
     </Router>
   </div>

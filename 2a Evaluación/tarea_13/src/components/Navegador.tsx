@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
@@ -22,11 +22,11 @@ const Navegador = () => {
         </Offcanvas.Header>
         <Offcanvas.Body className=' bgd-flex justify-content-center' >
           <Nav>
-            <Nav.Link className="px-3 text-dark fw-bold" href="/inicio">Inicio</Nav.Link>
-            <Nav.Link className="px-3 text-dark fw-bold" href="/puntos-de-interes">Puntos de Interés</Nav.Link>
-            <Nav.Link className="px-3 text-dark fw-bold" href="/restaurantes">Restaurantes</Nav.Link>
-            <Nav.Link className="px-3 text-dark fw-bold" href="/hoteles">Hoteles</Nav.Link>
-            <Nav.Link className="px-3 text-dark fw-bold" href="/actividades-de-ocio">Actividades de Ocio</Nav.Link>
+            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="/inicio">Inicio</Nav.Link>
+            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="/puntos-de-interes">Puntos de Interés</Nav.Link>
+            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="/restaurantes">Restaurantes</Nav.Link>
+            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="/hoteles">Hoteles</Nav.Link>
+            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="/actividades-de-ocio">Actividades de Ocio</Nav.Link>
           </Nav>
         </Offcanvas.Body>
       </Navbar.Offcanvas>

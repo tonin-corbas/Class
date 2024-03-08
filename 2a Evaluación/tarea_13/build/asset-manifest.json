@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/css/main.db62923b.css",
-    "main.js": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/js/main.9341a201.js",
+    "main.js": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/js/main.f12515d5.js",
     "static/js/453.9a969a03.chunk.js": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/js/453.9a969a03.chunk.js",
     "static/media/espe.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/espe.7d08f7a7648cf1c3d708.png",
     "static/media/luz.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/luz.2e5b775c5aaec2bd8877.png",
@@ -24,11 +24,11 @@
     "static/media/ordalia.png": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/media/ordalia.d94d1fbc9cd5dd37c33c.png",
     "index.html": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/index.html",
     "main.db62923b.css.map": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/css/main.db62923b.css.map",
-    "main.9341a201.js.map": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/js/main.9341a201.js.map",
+    "main.f12515d5.js.map": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/js/main.f12515d5.js.map",
     "453.9a969a03.chunk.js.map": "https://tonin-corbas.github.io/Lenguaje-de-marcas/2a%20Evaluación/tarea_13/build/static/js/453.9a969a03.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db62923b.css",
-    "static/js/main.9341a201.js"
+    "static/js/main.f12515d5.js"
   ]
 }

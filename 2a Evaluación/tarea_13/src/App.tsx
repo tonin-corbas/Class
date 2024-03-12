@@ -10,15 +10,8 @@ import Restaurantes from './views/Restaurantes';
 import fondo3 from './img/fondo3.png';
 import Footer from './components/Footer';
 
-function App() { return (
-  <div style={{
-    backgroundImage: `url(${fondo3})`,
-    height: 'auto', // Esto hará que la imagen ocupe toda la altura de la ventana
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    marginBottom: '0em'
-  }}>
+function App() {
+  return (
     <Router>
       <Navegador />
       <Routes>
@@ -29,10 +22,8 @@ function App() { return (
         <Route path="/actividades-de-ocio" element={<Ocio />} />
       </Routes>
       <Footer />
-      {/* footer */}
     </Router>
-  </div>
-);
+  );
 }
 
 export default App;

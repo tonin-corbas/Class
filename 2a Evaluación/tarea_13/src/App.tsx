@@ -15,11 +15,11 @@ function App() {
     <Router>
       <Navegador />
       <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/puntos-de-interes" element={<Interes />} />
-        <Route path="/restaurantes" element={<Restaurantes />} />
-        <Route path="/hoteles" element={<Hotel />} />
-        <Route path="/actividades-de-ocio" element={<Ocio />} />
+        <Route index element={<Inicio />} />
+        <Route path="puntos-de-interes" element={<Interes />} />
+        <Route path="restaurantes" element={<Restaurantes />} />
+        <Route path="hoteles" element={<Hotel />} />
+        <Route path="actividades-de-ocio" element={<Ocio />} />
       </Routes>
       <Footer />
     </Router>

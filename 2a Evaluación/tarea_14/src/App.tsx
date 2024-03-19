@@ -2,14 +2,24 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Breeds from './Views/Breeds';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navegador from './Componentes/Navegador';
+import Inicio from './Views/Inicio';
 
 
 function App() {
   return (
     <BrowserRouter>
-      <Breeds />
+      <Navegador />
+      <Routes>
+        <Route index element={<Inicio />} />
+        <Route path="Selector-razas" element={<Breeds />} />
+        {/* <Route path="restaurantes" element={<Restaurantes />} />
+        <Route path="hoteles" element={<Hotel />} />
+        <Route path="actividades-de-ocio" element={<Ocio />} /> */}
+      </Routes>
     </BrowserRouter>
+    
   );
 }
 

@@ -3,13 +3,12 @@ import { Link, NavLink } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import logo from "../img/logo.png";
-import fondo2 from "../img/fondo2.png";
+import logo2 from "../img/logo2.png";
 const Navegador = () => {
   return (
-    <Navbar expand="lg" className="bg-image text-dark"  bg="dark" data-bs-theme="dark" style={{ backgroundImage: `url(${fondo2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <Navbar expand="lg" className="bg-dark text-light"  bg="dark" data-bs-theme="dark">
       <Navbar.Brand as={Link} to='/'>
-        <img src={logo} width='70' alt='Logo'></img>
+        <img src={logo2} width='70' alt='Logo'></img>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="offcanvasNavbar"/>
       <Navbar.Offcanvas
@@ -22,11 +21,11 @@ const Navegador = () => {
         </Offcanvas.Header>
         <Offcanvas.Body className=' bgd-flex justify-content-center' >
           <Nav>
-            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="">Inicio</Nav.Link>
-            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="puntos-de-interes">Puntos de Interés</Nav.Link>
-            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="restaurantes">Restaurantes</Nav.Link>
-            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="hoteles">Hoteles</Nav.Link>
-            <Nav.Link className="px-3 text-dark fw-bold" as={NavLink} to="actividades-de-ocio">Actividades de Ocio</Nav.Link>
+            <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="">Inicio</Nav.Link>
+            <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="Selector-razas">Selector de Razas</Nav.Link>
+            <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="restaurantes">Restaurantes</Nav.Link>
+            <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="hoteles">Hoteles</Nav.Link>
+            <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="actividades-de-ocio">Actividades de Ocio</Nav.Link>
           </Nav>
         </Offcanvas.Body>
       </Navbar.Offcanvas>

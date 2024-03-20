@@ -23,9 +23,6 @@ const Navegador = () => {
           <Nav>
             <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="">Inicio</Nav.Link>
             <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="Selector-razas">Selector de Razas</Nav.Link>
-            <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="restaurantes">Restaurantes</Nav.Link>
-            <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="hoteles">Hoteles</Nav.Link>
-            <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="actividades-de-ocio">Actividades de Ocio</Nav.Link>
           </Nav>
         </Offcanvas.Body>
       </Navbar.Offcanvas>

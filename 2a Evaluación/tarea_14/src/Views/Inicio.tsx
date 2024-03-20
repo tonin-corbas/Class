@@ -6,19 +6,14 @@ const Inicio = () => {
     <Container>
       <Row className='text-center'>
         <Col>
-          <h1 className='text-dark'>Bienvenido a nuestra guía turística de Los Reinos Olvidados</h1>
+          <h1 className='text-dark'>Explora el Mundo Felino: Tu Guía Completa de Razas de Gatos</h1>
           <small className='text-dark'>
-            <p>En las sombras de un mundo antiguo y olvidado, se alza la majestuosa ciudad de Baldur’s Gate, un faro de civilización en la vasta y peligrosa Costa de la Espada. Aquí, las piedras milenarias de sus murallas susurran historias de heroísmo y traición, mientras que sus calles bulliciosas son un hervidero de aventureros, mercaderes y hechiceros, todos buscando fortuna o gloria.</p>
-            <p>La historia comienza en una taberna, el Elfo Cantarín, donde los rumores de tesoros perdidos y mazmorras olvidadas son tan abundantes como la cerveza que fluye libremente. Un grupo de valientes aventureros, cada uno con su propio pasado y ambiciones, se reúne alrededor de una mesa de madera desgastada. Entre ellos, un mago con la mirada perdida en antiguos pergaminos, un guerrero con cicatrices que cuentan su valentía, y un pícaro cuya sonrisa astuta apenas oculta su naturaleza escurridiza.</p>
-            <p>Juntos, deciden emprender un viaje hacia las ruinas de una fortaleza enana, donde se dice que yace un artefacto de poder inimaginable. Atravesando bosques encantados y montañas traicioneras, enfrentan criaturas de pesadilla y descubren alianzas inesperadas. Con cada paso, la magia del lugar teje su destino, llevándolos más cerca del corazón de los Reinos Olvidados, donde el verdadero poder yace en los lazos de camaradería y en la fuerza de la espada.</p>
-            <p>Así se forja la leyenda en Baldur’s Gate, donde cada esquina puede ser el inicio de una nueva saga y cada amanecer trae consigo la promesa de aventuras sin límites.</p>
+            <p>¿Eres un amante de los gatos buscando conocer más sobre tu compañero felino? ¡No busques más! Nuestra página web es el destino perfecto para explorar el vasto universo de las razas de gatos. Con una colección exhaustiva de fichas detalladas, te ofrecemos un recurso invaluable para descubrir y aprender sobre la diversidad y riqueza de las razas de gatos alrededor del mundo.</p>
+            <p>Desde el majestuoso Maine Coon hasta el exótico Gato Bengalí, nuestra web cubre una amplia gama de razas, cada una con su propia galería de fotos, descripciones detalladas y consejos de cuidado. ¿Estás pensando en adoptar? Navega a través de nuestras categorías para encontrar el gato que mejor se adapte a tu estilo de vida y preferencias. Ya sea que prefieras gatos de pelo largo o corto, activos o tranquilos, nuestra web te guía en tu búsqueda del compañero ideal.</p>
+            <p>Además, nuestra sección de cuidados te proporciona información vital sobre la salud y bienestar de tu gato. Aprende sobre nutrición, entrenamiento y cómo mantener a tu gato feliz y saludable durante toda su vida.
+              Visita nuestra página hoy y sumérgete en el encantador mundo de los gatos. Con actualizaciones regulares y contenido interactivo, estamos seguros de que encontrarás todo lo que necesitas para vivir la mejor experiencia felina.</p>
           </small>
         </Col>
-      </Row>
-      <Row className='text-center bgd-flex justify-content-center'>
-        {/* <Col xs={12} md={8}>
-          <img src={bg} alt="Imagen descriptiva de baldur's gate" style={{width: '100%', height: 'auto'}} className='pb-3'/>
-        </Col> */}
       </Row>
     </Container>
   );

@@ -14,9 +14,6 @@ function App() {
       <Routes>
         <Route index element={<Inicio />} />
         <Route path="Selector-razas" element={<Breeds />} />
-        {/* <Route path="restaurantes" element={<Restaurantes />} />
-        <Route path="hoteles" element={<Hotel />} />
-        <Route path="actividades-de-ocio" element={<Ocio />} /> */}
       </Routes>
     </BrowserRouter>
     

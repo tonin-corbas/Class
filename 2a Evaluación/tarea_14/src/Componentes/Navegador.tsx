@@ -19,7 +19,7 @@ const Navegador = () => {
         <Offcanvas.Header closeButton className='bg-danger text-center'>
           <Offcanvas.Title id="offcanvasNavbarLabel" className='text-light'>Menú</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body className=' bgd-flex justify-content-center' >
+        <Offcanvas.Body className=' bgd-flex justify-content-center bg-dark' >
           <Nav>
             <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="">Inicio</Nav.Link>
             <Nav.Link className="px-3 text-light fw-bold" as={NavLink} to="Selector-razas">Selector de Razas</Nav.Link>

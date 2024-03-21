@@ -43,9 +43,9 @@ const RazaDetalles = ({ id }: { id: string }) => {
 
     return (
         <div className="container-fluid">
-            <h1 className="position-relative">Detalles de la Raza</h1>
+            <h1 className="position-relative text-center">Detalles de la Raza</h1>
             {detalleRaza && (
-                <Card className="text-center align-self-baseline" key={detalleRaza.id}>
+                <Card className="text-center align-self-baseline bg-dark text-light" key={detalleRaza.id}>
                     <Card.Body>
                         <Row>
                             <Col>

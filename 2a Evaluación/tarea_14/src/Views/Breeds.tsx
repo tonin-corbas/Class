@@ -70,17 +70,17 @@ const Breeds = () => {
 
     <div>
       <h1 className="text-center">Razas</h1>
+      <div className="d-flex justify-content-center">
+        <Form.Select size="lg" value={selectRazaId} onChange={handleRazaChange} className="w-50 bg-dark text-light text-center">
+          <option value="">Selecciona una raza</option>
 
-      <Form.Select size="lg" value={selectRazaId} onChange={handleRazaChange} className="w-50">
-        <option value="">Selecciona una raza</option>
-
-        {razas.map((raza) => (
-          <option key={raza.id} value={raza.id}>
-            {raza.name}
-          </option>
-        ))}
-      </Form.Select >
-
+          {razas.map((raza) => (
+            <option key={raza.id} value={raza.id}>
+              {raza.name}
+            </option>
+          ))}
+        </Form.Select >
+      </div>
       {selectRazaId && <RazaDetalles id={selectRazaId} />}
 
     </div>

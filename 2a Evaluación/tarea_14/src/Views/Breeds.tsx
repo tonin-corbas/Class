@@ -73,7 +73,6 @@ const Breeds = () => {
       <div className="d-flex justify-content-center">
         <Form.Select size="lg" value={selectRazaId} onChange={handleRazaChange} className="w-50 bg-dark text-light text-center">
           <option value="">Selecciona una raza</option>
-
           {razas.map((raza) => (
             <option key={raza.id} value={raza.id}>
               {raza.name}

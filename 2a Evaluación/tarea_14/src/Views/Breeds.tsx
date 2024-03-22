@@ -71,7 +71,7 @@ const Breeds = () => {
     <div>
       <h1 className="text-center">Razas</h1>
 
-      <Form.Select size="lg" value={selectRazaId} onChange={handleRazaChange}>
+      <Form.Select size="lg" value={selectRazaId} onChange={handleRazaChange} className="w-50">
         <option value="">Selecciona una raza</option>
 
         {razas.map((raza) => (

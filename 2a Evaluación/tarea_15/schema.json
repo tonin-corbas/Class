@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "nombre": {
+          "type": "string"
+        },
+        "id": {
+          "type": "number"
+        },
+        "disponible": {
+          "type": "boolean"
+        },
+        "urlImagen": {
+          "type": "string",
+            "format": "uri"
+        },
+         "fecha": {
+          "type" : "string",
+            "format": "date"
+        }
+      },
+        "requiered": ["nombre", "id","disponible","urlImagen"]
+    }
+  }

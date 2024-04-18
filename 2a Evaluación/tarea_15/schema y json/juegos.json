@@ -1,0 +1,39 @@
+[{
+    "nombre": "Elden Ring",
+    "id": 1,
+    "disponible": true,
+    "urlImagen": "https://assets.xboxservices.com/assets/1d/5b/1d5bc84f-2135-4e2f-8ca6-bb000d97db7f.jpg?n=Elden-Ring_GLP-Poster-Image-1084_1920x1080.jpg",
+  	"fecha": "2022-02-25",
+    "precio": "50"
+  },
+  {
+    "nombre":"GTA San Andreas",
+    "id": 2,
+    "disponible": false,
+    "urlImagen":"https://s2.ppllstatics.com/elcorreo/www/multimedia/202110/29/media/cortadas/gta-san-andreas-kHUG-U1509866274808R-1248x770@El%20Correo.jpg",
+    "precio": "12.5"
+  },
+  {
+    "nombre": "Blasphemous",
+    "id": 3,
+    "disponible": true,
+    "urlImagen": "https://spainaudiovisualhub.mineco.gob.es/content/dam/seteleco-hub-audiovisual/resources/images/videojuegos/4_blasphemous.jpg",
+    "fecha": "2000-11-01",
+    "precio": "25"
+  },
+  {
+    "nombre": "Baldur's Gate III",
+    "id": 4,
+    "disponible": true,
+    "urlImagen": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/3098481c9164bb5f33069b37e49fba1a572ea3b89971ee7b.jpg",
+    "precio": "45"
+  },
+  {
+    "nombre": "Battle City",
+    "id": 5,
+    "disponible": false,
+    "urlImagen": "https://upload.wikimedia.org/wikipedia/en/4/48/Battle_City_NES_cover.jpg",
+    "fecha": "1985-09-09",
+    "precio": "11"
+  }
+]

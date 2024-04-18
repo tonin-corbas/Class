@@ -12,7 +12,7 @@ function App() {
       <Navegador />
       <Routes>
         <Route index element={<Inicio />} />
-        <Route path="Selector-razas" element={<Principal />} />
+        <Route path="Catálogo" element={<Principal />} />
       </Routes>
     </BrowserRouter>
     

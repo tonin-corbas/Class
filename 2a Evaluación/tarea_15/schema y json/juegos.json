@@ -37,5 +37,13 @@
     "urlImagen": "https://upload.wikimedia.org/wikipedia/en/4/48/Battle_City_NES_cover.jpg",
     "fecha": "1985-09-09",
     "precio": "11"
+  },
+  {
+    "nombre": "Devil May Cry 4",
+    "id": 5,
+    "disponible": false,
+    "urlImagen": "https://upload.wikimedia.org/wikipedia/en/4/48/Battle_City_NES_cover.jpg",
+    "fecha": "2008-01-31",
+    "precio": "20"
   }
 ]

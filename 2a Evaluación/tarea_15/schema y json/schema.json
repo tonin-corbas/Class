@@ -20,8 +20,13 @@
          "fecha": {
           "type" : "string",
             "format": "date"
+        },
+        "precio":{
+            "type":"number",
+            "minimum": 10,
+            "exclusiveMinimum": true
         }
       },
-        "requiered": ["nombre", "id","disponible","urlImagen"]
+        "requiered": ["nombre", "id","disponible","urlImagen","precio"]
     }
   }

@@ -29,6 +29,13 @@
     "precio": "45"
   },
   {
+    "nombre": "Baldur's Gate II",
+    "id": 7,
+    "disponible": true,
+    "urlImagen": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/3098481c9164bb5f33069b37e49fba1a572ea3b89971ee7b.jpg",
+    "precio": "45"
+  },
+  {
     "nombre": "Battle City",
     "id": 5,
     "disponible": false,

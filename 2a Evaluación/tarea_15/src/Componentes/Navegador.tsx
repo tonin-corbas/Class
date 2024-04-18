@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import logo2 from "../img/logo2.png";
+import logo2 from "../img/logog.png";
 const Navegador = () => {
   return (
     <Navbar expand="lg" className="bg-dark text-light"  bg="dark" data-bs-theme="dark">

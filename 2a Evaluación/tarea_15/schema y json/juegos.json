@@ -11,7 +11,8 @@
     "id": 2,
     "disponible": false,
     "urlImagen":"https://s2.ppllstatics.com/elcorreo/www/multimedia/202110/29/media/cortadas/gta-san-andreas-kHUG-U1509866274808R-1248x770@El%20Correo.jpg",
-    "precio": "12.5"
+    "precio": "12.5",
+    "fecha": "2004-10-26"
   },
   {
     "nombre": "Blasphemous",
@@ -26,14 +27,8 @@
     "id": 4,
     "disponible": true,
     "urlImagen": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/3098481c9164bb5f33069b37e49fba1a572ea3b89971ee7b.jpg",
-    "precio": "45"
-  },
-  {
-    "nombre": "Baldur's Gate II",
-    "id": 7,
-    "disponible": true,
-    "urlImagen": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/3098481c9164bb5f33069b37e49fba1a572ea3b89971ee7b.jpg",
-    "precio": "45"
+    "precio": "45",
+    "fecha": "2023-08-03"
   },
   {
     "nombre": "Battle City",

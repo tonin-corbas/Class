@@ -2,34 +2,40 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-const db = require('better-sqlite3') ('personas.sqlite')
-
-// creamos la configuración de la bbdd
+const db = require('better-sqlite3')('WEB.sqlite')
 
 app.use(express.json());
 
-app.get('/patata', (req, res) => {
-    res.send('Hello World!')
-})
-
-app.get('/personas', (req, res) => {
-    // aqui hare el select
-    resultadoselect = "SELECT * from personas"
-    const rows = db.prepare(resultadoselect).all()
+app.get('/usuarios', (req, res) => {
+    const rows = db.prepare('SELECT * FROM Usuarios').all()
     res.json(rows)
 })
 
-app.get('/persona', (req, res) => {
-    // aqui hare el select
-    personaId = req.query.id;
-    const row = db.prepare('SELECT * FROM personas WHERE id = ?').get(personaId)
-    console.log(row);
+app.get('/usuario', (req, res) => {
+    const usuarioId = req.query.id;
+    const row = db.prepare('SELECT * FROM Usuarios WHERE id = ?').get(usuarioId)
     res.json(row)
 })
 
-app.post("/persona", (req, res) => {
-    personaId = req.body.id;
-    const row = db.prepare('SELECT * FROM personas WHERE id = ?').get(personaId)
+app.get('/productos', (req, res) => {
+    const rows = db.prepare('SELECT * FROM Productos').all()
+    res.json(rows)
+})
+
+app.get('/producto', (req, res) => {
+    const productoId = req.query.id;
+    const row = db.prepare('SELECT * FROM Productos WHERE id = ?').get(productoId)
+    res.json(row)
+})
+
+app.get('/comandas', (req, res) => {
+    const rows = db.prepare('SELECT Comandas.id, Usuarios.nombre as usuario, Productos.nombre as producto FROM Comandas JOIN Usuarios ON Comandas.usuario_id = Usuarios.id JOIN Productos ON Comandas.producto_id = Productos.id').all()
+    res.json(rows)
+})
+
+app.get('/comanda', (req, res) => {
+    const comandaId = req.query.id;
+    const row = db.prepare('SELECT Comandas.id, Usuarios.nombre as usuari, Productos.nombre as producto FROM Comandas JOIN Usuarios ON Comandas.usuario_id = Usuarios.id JOIN Productos ON Comandas.producto_id = Productos.id WHERE Comandas.id = ?').get(comandaId)
     res.json(row)
 })
 

@@ -31,8 +31,13 @@ app.get('/usuario', (req, res) => {
 // devuelve el formulario
 // no requerie parametros
 app.get("/addusuario", (req, res) => {
-  const rows = db.prepare('SELECT * from Usuarios').all();
-  res.json(rows) 
+  const { nombre, email } = req.query;
+  if (nombre && email) {
+    const statement = db.prepare('INSERT INTO Usuarios (nombre, email) VALUES (?,?)');
+    const info = statement.run(nombre, email);
+    console.log(info);
+  }
+  res.redirect("addusuario");
 })
 
 //  añadir un nuevo usuario
@@ -41,11 +46,12 @@ app.post("/addusuario", (req, res) => {
   if (req.body) {
     if (req.body.nombre && req.body.email) {
       const statement = db.prepare('INSERT INTO Usuarios (nombre, email) VALUES (?,?)')
-      const info = statement.run();
+      const info = statement.run(req.body.nombre, req.body.precio);
       console.log(info);
+
     }
   }
-  res.redirect("usuarios");
+  res.redirect("addusuario");
 })
 
 app.get('/productos', (req, res) => {
@@ -53,19 +59,19 @@ app.get('/productos', (req, res) => {
   res.json(rows)
 })
 
-app.get('/producto', (req, res) => {
+app.get('/addproducto', (req, res) => {
   res.render("producto");
 })
 
-app.post("/producto", (req, res) => {
+app.post("/addproducto", (req, res) => {
   try {
     if (req.body.nom && req.body.preu) {
       const statement = db.prepare('INSERT INTO Productos (nom, preu) VALUES (?,?)')
       const info = statement.run(req.body.nom, req.body.preu)
     }
-    res.redirect("producto");
+    res.redirect("addproducto");
   } catch (SqliteError) {
-    res.redirect("producto");
+    res.redirect("addproducto");
   }
 })
 

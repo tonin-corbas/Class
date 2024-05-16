@@ -47,20 +47,31 @@ app.post("/addusuario", (req, res) => {
   res.redirect("addusuario");
 })
 
+// ver un producto en concreto
+app.get('/producto', (req, res) => {
+  const productoId = req.query.id;
+  const row = db.prepare('SELECT * FROM Productos WHERE id = ?').get(productoId)
+  res.json(row);
+})
+
+// lista de productos
 app.get('/productos', (req, res) => {
   const rows = db.prepare('SELECT * from Productos').all();
   res.json(rows)
 })
 
+// ver el formulario para añadir un producto
 app.get('/addproducto', (req, res) => {
   res.render("formularios_productos");
 })
 
+// añadir un nuevo producto
 app.post("/addproducto", (req, res) => {
+
   if (req.body) {
-    if (req.body.nombre && req.body.email) {
+    if (req.body.nombre && req.body.precio) {
       const statement = db.prepare('INSERT INTO Productos (nombre, precio) VALUES (?,?)');
-      const info = statement.run(req.body.nombre, req.body.email);
+      const info = statement.run(req.body.nombre, req.body.precio);
       console.log(info);
     }
   }

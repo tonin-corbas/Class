@@ -3,6 +3,7 @@ const app = express()
 const port = 3000
 const db = require('better-sqlite3')('BBDD.sqlite');
 
+app.use(express.static('public'))
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

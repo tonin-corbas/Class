@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include ("header.ejs") %>
+        <h1>Actualizar productos</h1>
+        <form action="/productosUpdate" method="post" class="container-sm mt-5">
+            <div class="mb-3" hidden aria-label="">
+                <label for="id" class="form-label">id</label>
+                <input type="text" class="form-control" name="ID" required hidden value="<%= Productos.id %>">
+            </div> 
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="Nombre"  value="<%=Productos.nombre %>">
+                <div id="nombre" class="form-text">Escribe el nuevo nombre del producto</div>   
+            </div>
+            <div class="mb-3">
+                <label for="preu" class="form-label">Precio</label>
+                <input type="preu" class="form-control" name="Preu" value="<%=Productos.precio %>">
+                <div id="preu" class="form-text">Escribe el nuevo precio del producto</div>
+            </div>
+                <button type="submit" class="btn btn-primary" href="/verProductos">Submit</button>
+        </form>
+        <%- include ("footer.ejs") %>
+</body>
+
+</html>

@@ -23,7 +23,7 @@ app.get('/usuarios', (req, res) => {
 // Ver listado en formato html de los usuarios
 app.get('/verUsuarios', (req, res) => {
   const rows = db.prepare('SELECT * FROM Usuarios').all();
-  res.render("verUsuarios", { usuarios: rows });
+  res.render("verUsuarios", { usuario: rows });
 });
 
 // ver un usuario en concreto
@@ -89,9 +89,10 @@ app.post("/addproducto", (req, res) => {
 
 // ver el formulario para añadir una comanda
 app.get('/addcomanda', (req, res) => {
-  const rowsProductos = db.prepare('SELECT * FROM Productos').all();
-  const rowsUsuarios = db.prepare('SELECT * FROM Usuarios').all();
-  res.render('formulario_comandas', { usuarios: rowsUsuarios, productos: rowsProductos });
+  const rowProductos = db.prepare('SELECT * FROM Productos').all();
+  const rowUsuarios = db.prepare('SELECT * FROM Usuarios').all();
+  console.log(rowUsuarios);
+  res.render('formulario_comandas', { usuario: rowUsuarios, productos: rowProductos });
 });
 
 // Añadir una comanda
@@ -126,7 +127,7 @@ app.post('/usuariosaUpdate', (req, res) => {
 
 // Métodos para actualizar los productos
 app.get('/productosUpdate', (req, res) => {
-  const proporcionado = req.query.ID;
+  const proporcionado = req.query.id;
   const statement = db.prepare('SELECT * FROM Productos WHERE ID = ?').get(proporcionado);
   res.render('productosUpdate', { producto: statement });
 });
@@ -143,21 +144,11 @@ app.post('/productosUpdate', (req, res) => {
 
 // Actualizar comandas
 app.get('/comandasUpdate', (req, res) => {
-  const proporcionado = req.query.ID;
-  const comandas = db.prepare(`
-    SELECT Comandas.id, Usuarios.nombre AS Nombre_Usuario, Productos.nombre AS Nombre_Producto
-    FROM Comandas
-    JOIN Usuarios ON Comandas.Usuario_id = Usuarios.id
-    JOIN Productos ON Comandas.Producto_id = Productos.id
-    WHERE Comandas.id = ?
-  `).get(proporcionado);
-  if (comandas) {
-    const rowsProduct = db.prepare('SELECT * FROM Productos').all();
-    const rowsPersona = db.prepare('SELECT * FROM Usuarios').all();
-    res.render('comandasUpdate', { comanda: comandas, personas: rowsPersona, productos: rowsProduct });
-  } else {
-    res.send('No se encontró ninguna comanda con el ID proporcionado.');
-  }
+  const id = req.query.id;
+  const comanda = db.prepare('select * from Comandas where id = ?').get(id)
+  const rowUsuarios = db.prepare('SELECT * from Usuarios').all()
+  const rowProductos = db.prepare('SELECT * from Productos').all()
+  res.render("comandaUpdate", {comanda: comanda, usuaris: rowUsuarios, productes:rowProductos});
 });
 
 app.post('/comandasUpdate', (req, res) => {

@@ -16,15 +16,15 @@
             <div class="col-md-6">
                 <form action="/addcomanda" method="post">
                     <p class="display-6">Usuarios</p>
-                    <select class="form-select" name="Usuario_id">
-                        <% usuarios.forEach((usuario) => { %>
+                    <select class="form-select" name="Usuarios_id" style="box-shadow: 0 0 5px black; border-radius: 5px;">
+                        <% usuario.forEach((usuario) => { %>
                             <option value="<%= usuario.id %>">
-                                <%= usuario.nombre %>
+                                <%= usuario.Nombre %>
                             </option>
                         <% }) %>
                     </select>
                     <p class="display-6">Productos</p>
-                    <select class="form-select" name="Producto_id">
+                    <select class="form-select" name="Producto_id" style="box-shadow: 0 0 5px black; border-radius: 5px;">
                         <% productos.forEach((producto) => { %>
                             <option value="<%= producto.id %>">
                                 <%= producto.nombre %>

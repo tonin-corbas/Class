@@ -152,7 +152,7 @@ app.get('/usuariosUpdate', (req, res) => {
 app.post('/usuariosaUpdate', (req, res) => {
   try {
     const statement = db.prepare('UPDATE Usuarios SET Nombre = ?, Email = ? WHERE id = ?');
-    const info = statement.run(req.body.Nombre, req.body.Email, req.body.ID);
+    const info = statement.run(req.body.Nombre, req.body.Email, req.body.id);
     res.redirect('/verUsuarios');
   } catch (SqliteError) {
     console.error(SqliteError);

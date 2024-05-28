@@ -89,21 +89,56 @@ app.post("/addproducto", (req, res) => {
 
 // ver el formulario para añadir una comanda
 app.get('/addcomanda', (req, res) => {
-  const rowProductos = db.prepare('SELECT * FROM Productos').all();
-  const rowUsuarios = db.prepare('SELECT * FROM Usuarios').all();
-  console.log(rowUsuarios);
-  res.render('formulario_comandas', { usuario: rowUsuarios, productos: rowProductos });
+  const usuarios = db.prepare('SELECT * FROM Usuarios').all();
+  const productos = db.prepare('SELECT * FROM Productos').all();
+  res.render('formulario_comandas', { usuarios, productos });
 });
 
-// Añadir una comanda
 app.post('/addcomanda', (req, res) => {
-  if (req.body.Usuario_id && req.body.Producto_id) {
-    const statement = db.prepare('INSERT INTO Comandas (Usuario_id, Producto_id) VALUES (?, ?)');
-    const info = statement.run(req.body.Usuario_id, req.body.Producto_id);
-    console.log(info);
-    res.redirect('/verComandas');
-  } else {
-    res.redirect('/addcomanda');
+  try {
+      const statement = db.prepare('INSERT INTO Comandas (Usuario_id, Producto_id) VALUES (?, ?)');
+      statement.run(req.body.Usuarios_id, req.body.Producto_id);
+      res.redirect('/verComandas');
+  } catch (error) {
+      console.error(error);
+      res.status(500).send('Error al agregar la comanda');
+  }
+});
+
+// Ruta para ver todas las comandas
+app.get('/verComandas', (req, res) => {
+  const comandas = db.prepare(`
+      SELECT c.id, u.Nombre AS UsuarioNombre, u.Email, p.nombre AS ProductName, p.precio 
+      FROM Comandas c 
+      JOIN Usuarios u ON c.Usuario_id = u.id 
+      JOIN Productos p ON c.Producto_id = p.id
+  `).all();
+  res.render('verComandas', { comandas });
+});
+
+// Ruta para mostrar el formulario de actualización de una comanda
+app.get('/comandasUpdate', (req, res) => {
+  const id = req.query.ID;
+  const comanda = db.prepare(`
+      SELECT c.id, c.Usuario_id, c.Producto_id, u.Nombre AS UsuarioNombre, u.Email, p.nombre AS ProductName, p.precio 
+      FROM Comandas c 
+      JOIN Usuarios u ON c.Usuario_id = u.id 
+      JOIN Productos p ON c.Producto_id = p.id 
+      WHERE c.id = ?
+  `).get(id);
+  const usuarios = db.prepare('SELECT * FROM Usuarios').all();
+  const productos = db.prepare('SELECT * FROM Productos').all();
+  res.render('comandasUpdate', { comanda, usuarios, productos });
+});
+
+app.post('/comandasUpdate', (req, res) => {
+  try {
+      const statement = db.prepare('UPDATE Comandas SET Usuario_id = ?, Producto_id = ? WHERE id = ?');
+      statement.run(req.body.Usuarios_id, req.body.Producto_id, req.body.id);
+      res.redirect('/verComandas');
+  } catch (error) {
+      console.error(error);
+      res.status(500).send('Error al actualizar la comanda');
   }
 });
 
@@ -142,24 +177,6 @@ app.post('/productosUpdate', (req, res) => {
   }
 });
 
-// Actualizar comandas
-app.get('/comandasUpdate', (req, res) => {
-  const id = req.query.id;
-  const comanda = db.prepare('select * from Comandas where id = ?').get(id)
-  const rowUsuarios = db.prepare('SELECT * from Usuarios').all()
-  const rowProductos = db.prepare('SELECT * from Productos').all()
-  res.render("comandaUpdate", {comanda: comanda, usuaris: rowUsuarios, productes:rowProductos});
-});
-
-app.post('/comandasUpdate', (req, res) => {
-  try {
-    const statement = db.prepare('UPDATE Comandas SET Usuario_id = ?, Producto_id = ? WHERE id = ?');
-    const info = statement.run(req.body.Usuario_id, req.body.Producto_id, req.body.id);
-    res.redirect("/verComandas");
-  } catch (error) {
-    console.error(error);
-  }
-});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

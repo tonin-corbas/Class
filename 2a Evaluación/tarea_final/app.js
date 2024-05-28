@@ -47,7 +47,7 @@ app.post("/addusuario", (req, res) => {
       console.log(info);
     }
   }
-  res.redirect("addusuario");
+  res.redirect("/verUsuarios");
 });
 
 // ver un producto en concreto
@@ -84,7 +84,7 @@ app.post("/addproducto", (req, res) => {
       console.log(info);
     }
   }
-  res.redirect("addproducto");
+  res.redirect("/verProductos");
 });
 
 // ver el formulario para añadir una comanda

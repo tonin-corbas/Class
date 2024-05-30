@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <%- include ("header.ejs") %>
+    <%- include("header.ejs") %>
     <div class="container">
         <h1 class="text-center">Actualizar Comanda</h1>
         <form action="/comandasUpdate" method="post" class="container-sm mt-5 text-center">
@@ -22,7 +22,7 @@
                 <label for="Usuarios_id" class="form-label">Nombre de Usuario</label>
                 <select class="form-select" name="Usuarios_id" required>
                     <% usuarios.forEach((usuario) => { %>
-                        <option value="<%= usuario.id %>" <%= usuario.id === comanda.Usuario_id ? 'selected' : '' %>>
+                        <option value="<%= usuario.id %>" <%= usuario.id == comanda.Usuario_id ? 'selected' : '' %>>
                             <%= usuario.Nombre %>
                         </option>
                     <% }) %>
@@ -32,7 +32,7 @@
                 <label for="Producto_id" class="form-label">Nombre del Producto</label>
                 <select class="form-select" name="Producto_id" required>
                     <% productos.forEach((producto) => { %>
-                        <option value="<%= producto.id %>" <%= producto.id === comanda.Producto_id ? 'selected' : '' %>>
+                        <option value="<%= producto.id %>" <%= producto.id == comanda.Producto_id ? 'selected' : '' %>>
                             <%= producto.nombre %>
                         </option>
                     <% }) %>
@@ -41,7 +41,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-    <%- include ("footer.ejs") %>
+    <%- include("footer.ejs") %>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

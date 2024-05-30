@@ -141,7 +141,6 @@ app.post('/comandasUpdate', (req, res) => {
       res.status(500).send('Error al actualizar la comanda');
   }
 });
-
 // Métodos para actualizar a los usuarios
 app.get('/usuariosUpdate', (req, res) => {
   const proporcionado = req.query.id;
